@@ -1,0 +1,10 @@
+{
+  "name": "rednet-criteria-layer",
+  "title": "Критериальный Слой",
+  "layer": "mvp",
+  "modes": ["off", "observe", "full", "hold"],
+  "inputs": ["requirements", "feedback", "project_rules"],
+  "outputs": ["criteria", "acceptance_checklist", "risk_of_miss"],
+  "forbidden": ["replace_action_with_planning", "treat_preference_as_permanent_rule"],
+  "status": "installable"
+}

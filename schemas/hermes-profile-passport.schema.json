@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rednet.local/schemas/hermes-profile-passport.schema.json",
+  "title": "REDNET Hermes Profile Passport",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_id",
+    "agent_role",
+    "mode_default",
+    "memory_boundary",
+    "platforms",
+    "model_route",
+    "skill_packages",
+    "hook_registry",
+    "plugin_capabilities",
+    "live_actions",
+    "publish_gate"
+  ],
+  "properties": {
+    "profile_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "agent_role": {
+      "type": "string",
+      "enum": ["research", "coordination", "personal", "service"]
+    },
+    "mode_default": { "type": "string", "minLength": 1 },
+    "memory_boundary": {
+      "type": "string",
+      "enum": ["own", "shared-readonly", "forbidden"]
+    },
+    "platforms": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "model_route": {
+      "type": "string",
+      "enum": ["primary", "service", "local-aux"]
+    },
+    "skill_packages": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "hook_registry": { "type": "string" },
+    "plugin_capabilities": { "type": "string" },
+    "live_actions": { "type": "boolean", "const": false },
+    "publish_gate": {
+      "type": "string",
+      "enum": ["none", "draft-first", "manual"]
+    }
+  }
+}

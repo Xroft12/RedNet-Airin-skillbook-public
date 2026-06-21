@@ -1,0 +1,10 @@
+{
+  "name": "rednet-unfinished-memory",
+  "title": "Память Незавершенного",
+  "layer": "mvp",
+  "modes": ["off", "observe", "full", "hold"],
+  "inputs": ["plans", "checklists", "handoff", "open_questions"],
+  "outputs": ["open_items", "priority", "next_step", "continuation_point"],
+  "forbidden": ["store_private_diary", "hide_unfinished_work"],
+  "status": "installable"
+}

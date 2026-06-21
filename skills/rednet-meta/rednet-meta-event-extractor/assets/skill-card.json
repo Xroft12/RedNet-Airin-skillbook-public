@@ -1,0 +1,10 @@
+{
+  "name": "rednet-meta-event-extractor",
+  "title": "Извлекатель Мета-Событий",
+  "layer": "mvp",
+  "modes": ["off", "observe", "full", "hold"],
+  "inputs": ["chronology", "dialogue", "research_corpus"],
+  "outputs": ["meta_events", "codes", "candidate_skills", "risk_notes"],
+  "forbidden": ["treat_metaphor_as_ready_skill", "publish_private_source"],
+  "status": "installable"
+}

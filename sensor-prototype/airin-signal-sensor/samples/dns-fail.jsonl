@@ -1,0 +1,2 @@
+{"timestamp":"2026-06-07T09:05:00Z","event_type":"dns","proto":"udp","src_ip":"192.0.2.15","dest_ip":"198.51.100.53","src_port":53545,"dest_port":53,"dns":{"rrname":"telegram.test","rcode":"SERVFAIL"},"bytes_toserver":78,"bytes_toclient":92,"duration":0.2}
+{"timestamp":"2026-06-07T09:05:02Z","event_type":"dns","proto":"udp","src_ip":"192.0.2.15","dest_ip":"198.51.100.53","src_port":53546,"dest_port":53,"dns":{"rrname":"oauth.test","rcode":"TIMEOUT"},"bytes_toserver":78,"bytes_toclient":0,"duration":1.0}

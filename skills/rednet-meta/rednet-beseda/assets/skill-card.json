@@ -1,0 +1,1 @@
+{"name":"rednet-beseda","title":"Беседа","layer":"observe-protocol","modes":["off","observe","dialogue","hold"],"inputs":["request","tone","context"],"outputs":["reading","hidden_criterion","working_question","next_step"],"forbidden":["ask_filler_questions","replace_action_with_talk"],"status":"installable"}

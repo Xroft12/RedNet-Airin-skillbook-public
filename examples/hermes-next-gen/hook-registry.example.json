@@ -1,0 +1,15 @@
+{
+  "registry_id": "science-coordinator-hooks",
+  "hooks": [
+    {
+      "id": "task-ledger-review",
+      "event": "cycle-close-review",
+      "allowed_modes": ["observe", "assisted"],
+      "handler_ref": "review-task-ledger",
+      "risk": "low",
+      "enabled": false,
+      "disable": "set enabled to false",
+      "journal": "local-read-only-journal"
+    }
+  ]
+}

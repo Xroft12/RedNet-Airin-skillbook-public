@@ -1,0 +1,12 @@
+{
+  "name": "rednet-neural-service-node",
+  "title": "Нейро-узел сервисов Айрин",
+  "version": "1.1.0",
+  "layer": "nano-node",
+  "default_mode": "observe",
+  "modes": ["off", "observe", "advise", "hold", "act"],
+  "summary": "Observe/advise-only микро-LLM узел для безопасной оценки статусов и создания pending-рекомендаций без прямых действий.",
+  "inputs": ["safe_status_snapshot", "queue_state", "guardian_state", "attempt_patterns"],
+  "outputs": ["assessment", "pending_recommendation", "confidence", "forbidden_actions"],
+  "forbidden": ["tokens", "sessions", "payload", "network_changes", "gateway_restart", "autonomous_publish"]
+}

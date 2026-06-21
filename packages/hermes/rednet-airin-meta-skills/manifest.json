@@ -1,0 +1,62 @@
+{
+  "name": "rednet-airin-meta-skills",
+  "version": "0.2.2",
+  "date": "2026-06-08",
+  "language": "ru",
+  "description": "Установочный пакет REDNET Airin Skillbook: мета-навыки, протоколы сопровождения, observe-only сенсоры и Stage 1 advise нейро-узла сервисов.",
+  "default_mode": "dry-run",
+  "live_runtime_policy": "do-not-touch-live-hermes-without-maintenance-window",
+  "includes": {
+    "skill_roots": [
+      "skills/rednet",
+      "skills/rednet-meta"
+    ],
+    "protocols": [
+      "protocols/session-guided-activation.md",
+      "protocols/manifest-change-support.md",
+      "protocols/skill-awakening-dialogue.md",
+      "protocols/acceptance-and-disable.md"
+    ],
+    "sensor_prototype": "sensor-prototype/airin-signal-sensor",
+    "wakefulness_prototype": "sensor-prototype/airin-wakefulness-node",
+    "neural_service_node_prototype": "sensor-prototype/airin-neural-service-node",
+    "installer": "packages/hermes/rednet-airin-meta-skills/install.ps1"
+  },
+  "skills": [
+    {"name": "rednet-double-evaluation", "path": "skills/rednet/rednet-double-evaluation", "layer": "mvp-plus", "version": "1.4.0", "modes": ["off", "observe", "light", "full", "manifest", "hold", "short-term", "signal", "passive", "service", "feel"]},
+    {"name": "rednet-wakefulness-cascade", "path": "skills/rednet/rednet-wakefulness-cascade", "layer": "nano-node", "version": "0.2.0", "modes": ["off", "observe", "feel", "service", "hold", "wake-candidate"]},
+    {"name": "rednet-neural-service-node", "path": "skills/rednet/rednet-neural-service-node", "layer": "nano-node", "version": "1.1.0", "modes": ["off", "observe", "advise", "hold", "act"]},
+    {"name": "rednet-export-parser", "path": "skills/rednet-meta/rednet-export-parser", "layer": "mvp", "modes": ["off", "observe", "full", "hold"]},
+    {"name": "rednet-meta-event-extractor", "path": "skills/rednet-meta/rednet-meta-event-extractor", "layer": "mvp", "modes": ["off", "observe", "full", "hold"]},
+    {"name": "rednet-criteria-layer", "path": "skills/rednet-meta/rednet-criteria-layer", "layer": "mvp", "modes": ["off", "observe", "full", "hold"]},
+    {"name": "rednet-unfinished-memory", "path": "skills/rednet-meta/rednet-unfinished-memory", "layer": "mvp", "modes": ["off", "observe", "full", "hold"]},
+    {"name": "rednet-branch-synchronizer", "path": "skills/rednet-meta/rednet-branch-synchronizer", "layer": "mvp", "modes": ["off", "observe", "full", "hold"]},
+    {"name": "rednet-meta-memory", "path": "skills/rednet-meta/rednet-meta-memory", "layer": "observe-protocol", "modes": ["off", "observe", "protocol", "hold"]},
+    {"name": "rednet-intention-map", "path": "skills/rednet-meta/rednet-intention-map", "layer": "observe-protocol", "modes": ["off", "observe", "protocol", "hold"]},
+    {"name": "rednet-process-observer", "path": "skills/rednet-meta/rednet-process-observer", "layer": "observe-protocol", "modes": ["off", "observe", "protocol", "hold"]},
+    {"name": "rednet-uncertainty-register", "path": "skills/rednet-meta/rednet-uncertainty-register", "layer": "observe-protocol", "modes": ["off", "observe", "protocol", "hold"]},
+    {"name": "rednet-decision-memory", "path": "skills/rednet-meta/rednet-decision-memory", "layer": "observe-protocol", "modes": ["off", "observe", "protocol", "hold"]},
+    {"name": "rednet-beseda", "path": "skills/rednet-meta/rednet-beseda", "layer": "observe-protocol", "modes": ["off", "observe", "dialogue", "hold"]},
+    {"name": "rednet-skill-collector", "path": "skills/rednet-meta/rednet-skill-collector", "layer": "observe-protocol", "modes": ["off", "observe", "protocol", "hold"]},
+    {"name": "rednet-utility-evaluator", "path": "skills/rednet-meta/rednet-utility-evaluator", "layer": "observe-protocol", "modes": ["off", "observe", "protocol", "hold"]},
+    {"name": "rednet-public-editor", "path": "skills/rednet-meta/rednet-public-editor", "layer": "observe-protocol", "modes": ["off", "observe", "protocol", "hold"]},
+    {"name": "rednet-research-protocol", "path": "skills/rednet-meta/rednet-research-protocol", "layer": "observe-protocol", "modes": ["off", "observe", "protocol", "hold"]}
+  ],
+  "forbidden": [
+    "raw_chat",
+    "diary_capsules",
+    "oauth_sessions",
+    "telegram_sessions",
+    "tokens",
+    "private_keys",
+    "live_routes",
+    "payload"
+  ],
+  "checks": [
+    "powershell -ExecutionPolicy Bypass -File packages/hermes/rednet-airin-meta-skills/install.ps1 -DryRun",
+    "python sensor-prototype/airin-signal-sensor/sensor.py init --state-dir tmp/sensor-demo",
+    "python -m unittest discover sensor-prototype/airin-signal-sensor/tests",
+    "python -m unittest discover sensor-prototype/airin-wakefulness-node/tests",
+    "python -m unittest discover sensor-prototype/airin-neural-service-node/tests"
+  ]
+}

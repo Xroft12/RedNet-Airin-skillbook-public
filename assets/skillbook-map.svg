@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Карта REDNET Airin Skillbook</title>
+  <desc id="desc">Публичная карта репозитория: вход, документация, навыки, протоколы, пакеты, портал и лаборатория с границей приватности.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="0.55" stop-color="#10233f"/>
+      <stop offset="1" stop-color="#1a3a5c"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf8ff"/>
+      <stop offset="1" stop-color="#7fd7ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .bg{fill:url(#bg)} .line{stroke:#81d9ff;stroke-width:3;opacity:.62;fill:none;stroke-linecap:round}
+      .card{fill:rgba(255,255,255,.08);stroke:rgba(180,235,255,.45);stroke-width:2;rx:24}
+      .core{fill:rgba(127,215,255,.16);stroke:#b9f1ff;stroke-width:3;rx:30;filter:url(#glow)}
+      .title{font:700 42px Inter,Segoe UI,Arial,sans-serif;fill:#f5fbff}.subtitle{font:400 22px Inter,Segoe UI,Arial,sans-serif;fill:#b9d9e8}
+      .h{font:700 24px Inter,Segoe UI,Arial,sans-serif;fill:#f6fbff}.p{font:400 17px Inter,Segoe UI,Arial,sans-serif;fill:#cce6f2}
+      .chip{fill:rgba(127,215,255,.18);stroke:#81d9ff;stroke-width:1.5;rx:18}.chipText{font:600 15px Inter,Segoe UI,Arial,sans-serif;fill:#e9fbff}
+      .small{font:600 14px Inter,Segoe UI,Arial,sans-serif;fill:#9eddf5}.lock{fill:#ffd166}
+    </style>
+  </defs>
+  <rect class="bg" width="1280" height="720"/>
+  <circle cx="1015" cy="115" r="210" fill="#7fd7ff" opacity=".06"/>
+  <circle cx="180" cy="610" r="260" fill="#baf2ff" opacity=".05"/>
+
+  <text x="72" y="82" class="title">REDNET Airin Skillbook</text>
+  <text x="72" y="116" class="subtitle">публичная книга навыков: документация · установка · протоколы · безопасные прототипы</text>
+
+  <rect x="470" y="245" width="340" height="170" class="core"/>
+  <text x="640" y="307" text-anchor="middle" class="h">Skillbook Core</text>
+  <text x="640" y="343" text-anchor="middle" class="p">README · docs/navigation · INSTALL</text>
+  <text x="640" y="376" text-anchor="middle" class="small">единый вход без приватного корпуса</text>
+
+  <g>
+    <rect x="75" y="185" width="245" height="120" class="card"/>
+    <text x="100" y="232" class="h">docs/</text>
+    <text x="100" y="263" class="p">архитектура, словарь,</text>
+    <text x="100" y="289" class="p">навигация, публикация</text>
+  </g>
+  <g>
+    <rect x="75" y="390" width="245" height="120" class="card"/>
+    <text x="100" y="437" class="h">skills/</text>
+    <text x="100" y="468" class="p">installable SKILL.md</text>
+    <text x="100" y="494" class="p">rednet + rednet-meta</text>
+  </g>
+  <g>
+    <rect x="960" y="185" width="245" height="120" class="card"/>
+    <text x="985" y="232" class="h">packages/</text>
+    <text x="985" y="263" class="p">manifest, dry-run</text>
+    <text x="985" y="289" class="p">и установщик</text>
+  </g>
+  <g>
+    <rect x="960" y="390" width="245" height="120" class="card"/>
+    <text x="985" y="437" class="h">portal/</text>
+    <text x="985" y="468" class="p">локальная витрина</text>
+    <text x="985" y="494" class="p">только чтение</text>
+  </g>
+  <g>
+    <rect x="405" y="540" width="220" height="90" class="card"/>
+    <text x="430" y="582" class="h">protocols/</text>
+    <text x="430" y="611" class="p">приёмка и stop gates</text>
+  </g>
+  <g>
+    <rect x="655" y="540" width="220" height="90" class="card"/>
+    <text x="680" y="582" class="h">research/</text>
+    <text x="680" y="611" class="p">только curated reports</text>
+  </g>
+
+  <path class="line" d="M470 305 C390 260 350 242 320 245"/>
+  <path class="line" d="M470 355 C380 408 350 450 320 450"/>
+  <path class="line" d="M810 305 C900 250 930 244 960 245"/>
+  <path class="line" d="M810 355 C910 402 930 450 960 450"/>
+  <path class="line" d="M590 415 C560 470 535 510 515 540"/>
+  <path class="line" d="M690 415 C720 470 745 510 765 540"/>
+
+  <rect x="418" y="155" width="445" height="42" class="chip"/>
+  <text x="640" y="182" text-anchor="middle" class="chipText">private-first · public-later · dry-run by default · read-only portal</text>
+
+  <g transform="translate(70 620)">
+    <path class="lock" d="M18 16h-2v-5a6 6 0 0 0-12 0v5H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V18a2 2 0 0 0-2-2ZM7 11a3 3 0 0 1 6 0v5H7v-5Z"/>
+    <text x="34" y="25" class="p">Приватные чаты, токены, OAuth-сессии, runtime-выгрузки и рабочие базы не входят в публичный слой.</text>
+  </g>
+</svg>

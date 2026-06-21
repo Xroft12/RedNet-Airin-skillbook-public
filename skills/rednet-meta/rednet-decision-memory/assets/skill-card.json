@@ -1,0 +1,1 @@
+{"name":"rednet-decision-memory","title":"Память Решений","layer":"observe-protocol","modes":["off","observe","protocol","hold"],"inputs":["decisions","rules","feedback"],"outputs":["decision_record","scope","expiry_or_review"],"forbidden":["store_temporary_mood_as_rule"],"status":"installable"}

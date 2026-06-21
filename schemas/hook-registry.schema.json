@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rednet.local/schemas/hook-registry.schema.json",
+  "title": "REDNET Hook Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["registry_id", "hooks"],
+  "properties": {
+    "registry_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "hooks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "event",
+          "allowed_modes",
+          "handler_ref",
+          "risk",
+          "enabled",
+          "disable",
+          "journal"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "event": { "type": "string", "minLength": 1 },
+          "allowed_modes": {
+            "type": "array",
+            "items": { "type": "string" },
+            "uniqueItems": true
+          },
+          "handler_ref": { "type": "string", "minLength": 1 },
+          "risk": { "type": "string", "enum": ["low", "medium", "high"] },
+          "enabled": { "type": "boolean", "const": false },
+          "disable": { "type": "string", "minLength": 1 },
+          "journal": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

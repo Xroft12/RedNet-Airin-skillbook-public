@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RedNET Quiet Step Lab Discovery Card",
+  "type": "object",
+  "required": ["title", "role", "kind", "status", "summary", "created_at"],
+  "properties": {
+    "title": {"type": "string", "minLength": 3},
+    "role": {"type": "string"},
+    "kind": {"type": "string", "enum": ["algorithm", "formula", "architecture", "prototype", "risk", "source", "experiment", "other"]},
+    "status": {"type": "string", "enum": ["candidate", "pilot_now", "audit_first", "scout", "red_zone"]},
+    "tags": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "summary": {"type": "string"},
+    "created_at": {"type": "string"},
+    "sha256": {"type": "string"}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "map_id": "science-coordinator-plugins",
+  "plugins": [
+    {
+      "id": "local-portal-reader",
+      "capabilities": ["read"],
+      "allowed_modes": ["observe", "assisted"],
+      "risk": "low",
+      "enabled": false,
+      "operator_window_required": false
+    },
+    {
+      "id": "publication-preparer",
+      "capabilities": ["read", "publish"],
+      "allowed_modes": ["publish"],
+      "risk": "medium",
+      "enabled": false,
+      "operator_window_required": true
+    }
+  ]
+}

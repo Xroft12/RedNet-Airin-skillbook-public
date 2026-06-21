@@ -1,0 +1,1 @@
+{"name":"rednet-uncertainty-register","title":"Регистр Неопределенности","layer":"observe-protocol","modes":["off","observe","protocol","hold"],"inputs":["claims","signals","missing_data"],"outputs":["facts","observations","hypotheses","risks","checks"],"forbidden":["present_hypothesis_as_fact"],"status":"installable"}

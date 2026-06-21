@@ -1,0 +1,2 @@
+{"timestamp":"2026-06-07T09:00:00Z","event_type":"flow","proto":"tcp","src_ip":"192.0.2.15","dest_ip":"203.0.113.10","src_port":51230,"dest_port":443,"bytes_toserver":1480,"bytes_toclient":6020,"pkts_toserver":12,"pkts_toclient":14,"duration":2.4,"state":"ESTABLISHED"}
+{"timestamp":"2026-06-07T09:00:02Z","event_type":"dns","proto":"udp","src_ip":"192.0.2.15","dest_ip":"198.51.100.53","src_port":53544,"dest_port":53,"dns":{"rrname":"example.invalid","rcode":"NOERROR"},"bytes_toserver":80,"bytes_toclient":160,"duration":0.04}

@@ -1,0 +1,13 @@
+{
+  "profile_id": "science-coordinator-profile",
+  "agent_role": "coordination",
+  "mode_default": "observe",
+  "memory_boundary": "shared-readonly",
+  "platforms": ["local-portal"],
+  "model_route": "service",
+  "skill_packages": ["rednet-meta", "rednet-science-coordinator"],
+  "hook_registry": "science-coordinator-hooks",
+  "plugin_capabilities": "science-coordinator-plugins",
+  "live_actions": false,
+  "publish_gate": "manual"
+}

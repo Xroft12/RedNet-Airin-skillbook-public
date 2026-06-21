@@ -1,0 +1,10 @@
+{
+  "name": "rednet-branch-synchronizer",
+  "title": "Синхронизатор Веток",
+  "layer": "mvp",
+  "modes": ["off", "observe", "full", "hold"],
+  "inputs": ["memory_package", "project_docs", "sync_contract"],
+  "outputs": ["transferable_context", "non_transferable_context", "conflicts", "read_only_package"],
+  "forbidden": ["merge_agent_identities", "copy_private_diary", "copy_sessions_or_tokens"],
+  "status": "installable"
+}

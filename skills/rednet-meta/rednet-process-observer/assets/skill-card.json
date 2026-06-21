@@ -1,0 +1,1 @@
+{"name":"rednet-process-observer","title":"Наблюдатель Процесса","layer":"observe-protocol","modes":["off","observe","protocol","hold"],"inputs":["plan","actions","checks"],"outputs":["process_trace","turning_points","risk_notes"],"forbidden":["replace_work_with_reporting"],"status":"installable"}

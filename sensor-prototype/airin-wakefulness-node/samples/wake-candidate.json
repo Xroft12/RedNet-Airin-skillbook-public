@@ -1,0 +1,9 @@
+{
+  "queue_depth": 3,
+  "network_state": "ok",
+  "guardian_state": "observe",
+  "unfinished_items": 2,
+  "semantic_delta": 0.86,
+  "operator_present": true,
+  "channel_safe": true
+}

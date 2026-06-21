@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rednet.local/schemas/science-flow.schema.json",
+  "title": "REDNET Science Flow",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "mode",
+    "owner",
+    "flow",
+    "input",
+    "artifact",
+    "privacy",
+    "risk",
+    "next_step"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^science-flow-[0-9]{8}-[0-9]{3}$" },
+    "mode": { "type": "string", "enum": ["observe", "assisted", "guided"] },
+    "owner": { "type": "string", "enum": ["coordinator", "subagent", "operator"] },
+    "flow": {
+      "type": "string",
+      "enum": [
+        "papers",
+        "concepts",
+        "skills",
+        "services",
+        "subagents",
+        "publication",
+        "incidents"
+      ]
+    },
+    "input": { "type": "string", "minLength": 1 },
+    "artifact": {
+      "type": "string",
+      "enum": [
+        "task_card",
+        "paper_card",
+        "concept_card",
+        "qa_report",
+        "module_map",
+        "handoff",
+        "release_note"
+      ]
+    },
+    "privacy": { "type": "string", "enum": ["public", "internal", "private"] },
+    "risk": { "type": "string", "enum": ["low", "medium", "high"] },
+    "next_step": { "type": "string", "minLength": 1 },
+    "expires_at": { "type": "string" }
+  }
+}

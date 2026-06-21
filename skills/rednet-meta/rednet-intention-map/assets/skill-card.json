@@ -1,0 +1,1 @@
+{"name":"rednet-intention-map","title":"Карта Намерений","layer":"observe-protocol","modes":["off","observe","protocol","hold"],"inputs":["user_request","feedback","tone"],"outputs":["explicit_request","hidden_criterion","risk_of_guessing"],"forbidden":["claim_hidden_motive_as_fact"],"status":"installable"}

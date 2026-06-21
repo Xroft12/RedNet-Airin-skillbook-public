@@ -1,0 +1,122 @@
+name: rednet-double-evaluation-meta-skill
+version: 1.4.0
+status: passive-feel-anti-loop-boundary-guard-ready
+license: MIT
+author: RedNET contributors
+kind: hermes-meta-skill-package
+public_boundary: sanitized-method-only
+skill:
+  name: rednet-double-evaluation
+  path: skills/rednet/rednet-double-evaluation/SKILL.md
+  category: rednet
+  trigger_phrases:
+    - "двойная оценка"
+    - "двойной проход"
+    - "сначала прямо, потом послевкусие"
+    - "проанализируй свой анализ"
+    - "кратковременная память"
+    - "Кратковременный"
+    - "direct pass + reflective pass"
+    - "пассивный режим"
+    - "прочувствовать"
+  modes:
+    - off
+    - observe
+    - light
+    - full
+    - manifest
+    - hold
+    - hot-off
+    - short-term
+    - signal
+    - passive
+    - service
+    - feel
+short_term_layer:
+  name: "Кратковременный"
+  storage: separate_sqlite
+  default_db: "$HERMES_HOME/rednet/rednet-double-evaluation/short_term_memory.sqlite3"
+  writes_primary_memory: false
+  default_visibility: passive
+  service_mode_required_for_passive_review: true
+  schema_version: 5
+  boundary_guards:
+    - memory_namespace
+    - origin_agent
+    - origin_profile
+    - actor_tool
+    - tool_role
+    - source_trust
+    - semantic_key
+    - conflict_group
+    - conflict_policy
+    - promotion_scope
+    - safe_summary
+  operation_modes:
+    - passive
+    - service
+    - feel
+  cycle_policy_default: reshape_or_close
+  routes:
+    - decay
+    - keep
+    - review
+    - repeat
+    - reshape
+    - promote_candidate
+    - close
+  conflict_policies:
+    - hold
+    - append_only
+    - namespace_wins
+    - owner_wins
+    - newer_wins
+    - priority_wins
+    - reject
+  tool_roles:
+    - core
+    - extension
+    - amplifier
+    - importer
+  signal_spectrum:
+    - must_do
+    - want_to_do
+    - unclear
+    - dont_want_to_do
+    - never_do
+required_files:
+  - README.md
+  - manifest.yaml
+  - docs/double-evaluation-meta-skill.md
+  - skills/rednet/rednet-double-evaluation/SKILL.md
+  - skills/rednet/rednet-double-evaluation/references/activation-protocol.md
+  - skills/rednet/rednet-double-evaluation/references/manifestation-protocol.md
+  - skills/rednet/rednet-double-evaluation/references/safety-and-boundaries.md
+  - skills/rednet/rednet-double-evaluation/references/short-term-memory-layer.md
+  - skills/rednet/rednet-double-evaluation/templates/double-evaluation-session-log.md
+  - skills/rednet/rednet-double-evaluation/templates/agent-activation-card.md
+  - skills/rednet/rednet-double-evaluation/templates/short-term-memory-note.md
+  - skills/rednet/rednet-double-evaluation/scripts/short_term_memory.py
+  - install/INSTALL-HERMES.md
+  - install/activation.snippet.md
+  - install/install_hermes_skill.py
+  - checks/validate_package.py
+guardrails:
+  - separate_fact_observation_interpretation_metaphor_action
+  - no_raw_private_chat
+  - no_secrets_or_tokens
+  - no_claim_of_human_consciousness_as_fact
+  - no_external_action_without_authorization
+  - verify_current_facts_with_tools
+  - short_term_layer_does_not_write_primary_memory
+  - ttl_and_tombstone_for_temporary_cells
+  - signal_layer_respects_send_hold_no_action_gates
+  - passive_cells_not_exported_without_service_mode
+  - self_digging_cycles_route_to_reshape_or_close
+  - cross_ai_agent_profile_memory_mixing_requires_conflict_review
+  - extension_and_amplifier_tools_must_set_origin_and_tool_role
+  - promotion_candidates_prefer_safe_summary
+validation:
+  command: python checks/validate_package.py
+archive:
+  expected_root: rednet-double-evaluation-meta-skill

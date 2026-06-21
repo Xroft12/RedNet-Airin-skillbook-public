@@ -1,0 +1,1 @@
+{"name":"rednet-meta-memory","title":"Мета-память","layer":"observe-protocol","modes":["off","observe","protocol","hold"],"inputs":["thread","archive","report"],"outputs":["memory_layers","semantic_index","transfer_rules"],"forbidden":["publish_raw_thread","merge_agent_memory"],"status":"installable"}

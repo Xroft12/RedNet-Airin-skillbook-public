@@ -1,0 +1,1 @@
+{"name":"rednet-skill-collector","title":"Сборщик Навыков","layer":"observe-protocol","modes":["off","observe","protocol","hold"],"inputs":["meta_events","patterns","criteria"],"outputs":["skill_cards","maturity_status","install_plan"],"forbidden":["package_unverified_idea_as_ready_skill"],"status":"installable"}

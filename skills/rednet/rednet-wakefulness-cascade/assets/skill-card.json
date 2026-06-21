@@ -1,0 +1,12 @@
+{
+  "name": "rednet-wakefulness-cascade",
+  "title": "Контур Бодрствования Айрин",
+  "version": "0.2.0",
+  "layer": "nano-node",
+  "default_mode": "observe",
+  "modes": ["off", "observe", "feel", "service", "hold", "wake-candidate"],
+  "summary": "Мягкий self-poll и нано-оценка сигналов без скрытых действий и без вызова большой модели.",
+  "inputs": ["safe_snapshot", "queue_state", "guardian_state", "semantic_delta"],
+  "outputs": ["activation", "confidence", "guardian_action", "thread_sync_packet"],
+  "forbidden": ["payload", "raw_chat", "tokens", "sessions", "network_changes", "autonomous_publish"]
+}

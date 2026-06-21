@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rednet.local/schemas/agent-passport.schema.json",
+  "title": "REDNET Agent Passport",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "agent_id",
+    "role",
+    "profile_namespace",
+    "default_mode",
+    "allowed_modes",
+    "memory_boundary",
+    "model_route",
+    "platforms",
+    "tools",
+    "live_actions",
+    "publishing"
+  ],
+  "properties": {
+    "agent_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "role": {
+      "type": "string",
+      "enum": ["research", "coordination", "personal", "service"]
+    },
+    "profile_namespace": { "type": "string", "pattern": "^rednet:[a-z0-9][a-z0-9:-]*$" },
+    "default_mode": { "type": "string", "minLength": 1 },
+    "allowed_modes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "memory_boundary": {
+      "type": "string",
+      "enum": ["own", "shared-readonly", "forbidden"]
+    },
+    "model_route": {
+      "type": "string",
+      "enum": ["primary", "service", "local-aux"]
+    },
+    "platforms": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "tools": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "live_actions": { "type": "boolean", "const": false },
+    "publishing": {
+      "type": "string",
+      "enum": ["none", "draft-first", "manual"]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RedNET Quiet Step Lab module manifest",
+  "type": "object",
+  "required": ["module_id", "type", "status", "agent_scope", "purpose", "safety", "eval"],
+  "properties": {
+    "module_id": {"type": "string", "pattern": "^[a-z0-9_.-]+$"},
+    "type": {
+      "type": "string",
+      "enum": ["agent-role", "solution-pack", "sensor", "verifier", "storage", "router", "interface"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["candidate", "designed", "eval_ready", "pilot_shadow", "pilot_active", "reusable", "retired"]
+    },
+    "agent_scope": {"type": "string"},
+    "purpose": {"type": "string"},
+    "discovery_refs": {"type": "array", "items": {"type": "string"}},
+    "inputs": {"type": "array", "items": {"type": "string"}},
+    "outputs": {"type": "array", "items": {"type": "string"}},
+    "safety": {
+      "type": "object",
+      "required": ["contains_secrets", "requires_network", "side_effects", "allowed_modes"],
+      "properties": {
+        "contains_secrets": {"type": "boolean"},
+        "requires_network": {"type": "string", "enum": ["false", "optional", "true"]},
+        "side_effects": {"type": "string"},
+        "allowed_modes": {"type": "array", "items": {"type": "string"}},
+        "human_approval_required_for": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "eval": {
+      "type": "object",
+      "required": ["baseline", "metrics", "pass_gates"],
+      "properties": {
+        "baseline": {"type": "string"},
+        "metrics": {"type": "array", "items": {"type": "string"}},
+        "pass_gates": {"type": "array", "items": {"type": "string"}},
+        "regression_guards": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

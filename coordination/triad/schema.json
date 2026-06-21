@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "REDNET Triad Coordination Message",
+  "type": "object",
+  "required": [
+    "id",
+    "created_at",
+    "from_role",
+    "to_role",
+    "channel",
+    "mode",
+    "privacy",
+    "task",
+    "status",
+    "forbidden"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^triad-[0-9]{8}-[0-9]{4}$" },
+    "created_at": { "type": "string" },
+    "from_role": {
+      "type": "string",
+      "enum": ["operator", "core_agent", "codex_coordinator", "personal_assistant", "subagent"]
+    },
+    "to_role": {
+      "type": "string",
+      "enum": ["operator", "core_agent", "codex_coordinator", "personal_assistant", "subagent", "all"]
+    },
+    "channel": { "type": "string", "enum": ["triad"] },
+    "mode": {
+      "type": "string",
+      "enum": ["home", "lab", "server", "observe", "incident", "publish", "quiet_assistant"]
+    },
+    "privacy": {
+      "type": "string",
+      "enum": ["public", "internal", "private", "restricted"]
+    },
+    "task": { "type": "string", "minLength": 1 },
+    "context_ref": { "type": "string" },
+    "requires_reply": { "type": "boolean" },
+    "status": {
+      "type": "string",
+      "enum": ["open", "claimed", "drafted", "needs_review", "accepted", "blocked", "closed"]
+    },
+    "ttl": { "type": "string" },
+    "forbidden": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

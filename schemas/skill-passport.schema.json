@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rednet.local/schemas/skill-passport.schema.json",
+  "title": "REDNET Skill Passport",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "version",
+    "maturity",
+    "purpose",
+    "allowed_modes",
+    "blocked_modes",
+    "input_data",
+    "output_artifacts",
+    "memory_effect",
+    "tool_effect",
+    "privacy",
+    "disable",
+    "tests"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "maturity": {
+      "type": "string",
+      "enum": ["draft", "observe", "mvp", "stable", "experimental", "dangerous-disabled"]
+    },
+    "purpose": { "type": "string", "minLength": 1 },
+    "allowed_modes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "blocked_modes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "input_data": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "output_artifacts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "memory_effect": {
+      "type": "string",
+      "enum": ["none", "candidate", "short-term", "long-term-manual"]
+    },
+    "tool_effect": {
+      "type": "string",
+      "enum": ["none", "read-only", "guarded", "live-window"]
+    },
+    "privacy": {
+      "type": "string",
+      "enum": ["public", "internal", "private", "forbidden"]
+    },
+    "disable": { "type": "string", "minLength": 1 },
+    "tests": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  }
+}

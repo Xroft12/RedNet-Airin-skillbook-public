@@ -1,0 +1,10 @@
+{
+  "name": "rednet-export-parser",
+  "title": "Разбор Выгрузки",
+  "layer": "mvp",
+  "modes": ["off", "observe", "full", "hold"],
+  "inputs": ["markdown", "html", "jsonl", "archive_manifest", "report"],
+  "outputs": ["chronology", "decisions", "open_items", "privacy_boundary", "continuation_point"],
+  "forbidden": ["publish_raw_thread", "invent_missing_context", "store_secrets"],
+  "status": "installable"
+}

@@ -1,0 +1,1 @@
+{"name":"rednet-utility-evaluator","title":"Оценщик Полезности","layer":"observe-protocol","modes":["off","observe","protocol","hold"],"inputs":["baseline","new_result","criteria"],"outputs":["utility_report","regressions","decision"],"forbidden":["rate_beauty_instead_of_effect"],"status":"installable"}

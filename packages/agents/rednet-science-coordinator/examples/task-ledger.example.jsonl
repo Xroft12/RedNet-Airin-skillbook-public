@@ -1,0 +1,3 @@
+{"id":"science-flow-20260609-001","mode":"observe","owner":"coordinator","flow":"papers","input":"sanitized-paper-card","artifact":"paper_card","privacy":"public","risk":"low","next_step":"extract hypotheses and questions"}
+{"id":"science-flow-20260609-002","mode":"assisted","owner":"subagent","flow":"concepts","input":"api-university-activation-model","artifact":"concept_card","privacy":"public","risk":"low","next_step":"validate passport schema"}
+{"id":"science-flow-20260609-003","mode":"observe","owner":"coordinator","flow":"services","input":"read-only-service-status","artifact":"qa_report","privacy":"internal","risk":"medium","next_step":"keep live commands disabled"}

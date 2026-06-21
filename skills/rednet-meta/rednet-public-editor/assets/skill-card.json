@@ -1,0 +1,1 @@
+{"name":"rednet-public-editor","title":"Публичный Редактор","layer":"observe-protocol","modes":["off","observe","protocol","hold"],"inputs":["private_draft","research_notes","skill_cards"],"outputs":["public_draft","removed_items","risk_notes"],"forbidden":["publish_raw_private_material","publish_secrets"],"status":"installable"}

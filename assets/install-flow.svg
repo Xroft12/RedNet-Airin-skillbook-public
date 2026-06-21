@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">Безопасный поток установки REDNET Airin Skillbook</title>
+  <desc id="desc">Схема установки: clone, review, dry-run, optional apply, verify, rollback. Live Hermes не меняется без окна обслуживания.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071423"/><stop offset="1" stop-color="#122c4b"/></linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fd7ff"/><stop offset="1" stop-color="#c7f9ff"/></linearGradient>
+    <style>
+      .bg{fill:url(#bg)} .box{fill:rgba(255,255,255,.08);stroke:#85dfff;stroke-width:2;rx:24}.safe{stroke:#99f6c8}.guard{stroke:#ffd166}.arrow{stroke:#80d8ff;stroke-width:4;fill:none;marker-end:url(#m);opacity:.75}.title{font:800 38px Inter,Segoe UI,Arial,sans-serif;fill:#f5fbff}.h{font:700 24px Inter,Segoe UI,Arial,sans-serif;fill:#fff}.p{font:400 17px Inter,Segoe UI,Arial,sans-serif;fill:#cfe8f5}.code{font:600 15px Consolas,monospace;fill:#e7fbff}.note{font:600 16px Inter,Segoe UI,Arial,sans-serif;fill:#ffd166}
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#80d8ff"/></marker>
+  </defs>
+  <rect class="bg" width="1280" height="520"/>
+  <text x="64" y="72" class="title">Установка: сначала проверить, потом включать</text>
+  <text x="64" y="108" class="p">Пакет ставит только skill-папки. Протоколы, портал и прототипы остаются справочными материалами.</text>
+
+  <g transform="translate(64 180)">
+    <rect class="box safe" width="170" height="135"/>
+    <text x="24" y="42" class="h">1. Clone</text>
+    <text x="24" y="74" class="p">получить repo</text>
+    <text x="24" y="103" class="code">git clone …</text>
+  </g>
+  <path class="arrow" d="M244 248h70"/>
+  <g transform="translate(324 180)">
+    <rect class="box safe" width="170" height="135"/>
+    <text x="24" y="42" class="h">2. Review</text>
+    <text x="24" y="74" class="p">privacy + links</text>
+    <text x="24" y="103" class="code">git status</text>
+  </g>
+  <path class="arrow" d="M504 248h70"/>
+  <g transform="translate(584 180)">
+    <rect class="box guard" width="190" height="135"/>
+    <text x="24" y="42" class="h">3. Dry-run</text>
+    <text x="24" y="74" class="p">ничего не копирует</text>
+    <text x="24" y="103" class="code">install.ps1 -DryRun</text>
+  </g>
+  <path class="arrow" d="M784 248h70"/>
+  <g transform="translate(864 180)">
+    <rect class="box guard" width="170" height="135"/>
+    <text x="24" y="42" class="h">4. Apply</text>
+    <text x="24" y="74" class="p">только окно</text>
+    <text x="24" y="103" class="code">-Apply [-Force]</text>
+  </g>
+  <path class="arrow" d="M1044 248h70"/>
+  <g transform="translate(1124 180)">
+    <rect class="box safe" width="120" height="135"/>
+    <text x="20" y="42" class="h">5. Verify</text>
+    <text x="20" y="74" class="p">skills</text>
+    <text x="20" y="103" class="code">checks</text>
+  </g>
+
+  <rect x="64" y="380" width="1160" height="76" rx="22" fill="rgba(255,209,102,.10)" stroke="#ffd166" stroke-width="2"/>
+  <text x="92" y="412" class="note">Stop gate:</text>
+  <text x="184" y="412" class="p">без явного окна обслуживания не менять live Hermes, не править config.yaml, не рестартовать gateway и не подключать внешние каналы.</text>
+  <text x="92" y="440" class="p">Rollback: при `-Force` существующий навык переносится в `*.backup-YYYYMMDD-HHMMSS`; ручная проверка обязательна.</text>
+</svg>

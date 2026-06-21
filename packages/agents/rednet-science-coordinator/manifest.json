@@ -1,0 +1,91 @@
+{
+  "id": "rednet-science-coordinator",
+  "name": "REDNET Scientific Coordinator",
+  "version": "0.2.0",
+  "status": "template",
+  "default_mode": "observe",
+  "allowed_modes": ["off", "observe", "assisted", "guided"],
+  "forbidden_modes_by_default": ["lab-active", "trusted-lab"],
+  "purpose": [
+    "organize_research_flows",
+    "coordinate_subagents",
+    "produce_verifiable_artifacts",
+    "guard_publication_boundary",
+    "track_service_readiness"
+  ],
+  "flows": [
+    "papers",
+    "concepts",
+    "skills",
+    "services",
+    "subagents",
+    "publication",
+    "incidents"
+  ],
+  "skill_packages": [
+    "rednet-airin-meta-skills"
+  ],
+  "recommended_meta_skills": [
+    "rednet-double-evaluation",
+    "rednet-criteria-layer",
+    "rednet-uncertainty-register",
+    "rednet-process-observer",
+    "rednet-skill-collector",
+    "rednet-research-protocol",
+    "rednet-public-editor",
+    "rednet-unfinished-memory",
+    "rednet-decision-memory",
+    "rednet-branch-synchronizer"
+  ],
+  "required_artifacts": [
+    "task_card",
+    "paper_card",
+    "concept_card",
+    "qa_report",
+    "module_map",
+    "handoff",
+    "release_note"
+  ],
+  "privacy": {
+    "may_read": [
+      "sanitized_skillbook_docs",
+      "public_release_reports",
+      "module_registry",
+      "task_ledger"
+    ],
+    "must_not_read": [
+      "airin_diary",
+      "raw_thread",
+      "capsules",
+      "telegram_sessions",
+      "oauth_sessions",
+      "marcel_personal_memory",
+      "private_keys"
+    ]
+  },
+  "model": {
+    "provider": "private_gateway",
+    "env_base_url": "REDNET_MODEL_BASE_URL",
+    "env_auth_ref": "REDNET_MODEL_AUTH_REF",
+    "env_model": "REDNET_MODEL_NAME",
+    "default_model_hint": "qwen-plus-or-best-available",
+    "local_auxiliary_model": "classification-summary-format-check-only"
+  },
+  "guards": {
+    "live_commands": false,
+    "network_changes": false,
+    "docker_control": false,
+    "publishing": "manual_confirmation",
+    "secret_logging": false,
+    "artifact_required": true,
+    "uncertainty_register": true,
+    "mode_gate": true
+  },
+  "outputs": [
+    "task_cards",
+    "quality_reports",
+    "risk_lists",
+    "module_maps",
+    "release_notes"
+  ]
+}

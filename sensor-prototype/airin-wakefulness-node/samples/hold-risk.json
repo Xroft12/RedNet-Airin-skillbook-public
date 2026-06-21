@@ -1,0 +1,9 @@
+{
+  "queue_depth": 120,
+  "network_state": "degraded",
+  "guardian_state": "observe",
+  "unfinished_items": 4,
+  "semantic_delta": 0.72,
+  "operator_present": false,
+  "channel_safe": false
+}

@@ -1,0 +1,1 @@
+{"name":"rednet-research-protocol","title":"Исследовательский Протокол","layer":"observe-protocol","modes":["off","observe","protocol","hold"],"inputs":["corpus","notes","exports"],"outputs":["method","coded_events","limits","public_boundary"],"forbidden":["present_single_corpus_as_universal_proof"],"status":"installable"}
