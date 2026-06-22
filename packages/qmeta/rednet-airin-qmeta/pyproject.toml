@@ -39,3 +39,19 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 hermes_airin = ["skill_cards/*.json"]
+
+[tool.setuptools.data-files]
+"share/hermes-airin-qmeta" = [
+  "manifest.json",
+  "CHANGELOG.md",
+  "TEST_REPORT.md",
+  "LICENSE",
+]
+"share/hermes-airin-qmeta/config" = ["config/*.json"]
+"share/hermes-airin-qmeta/docs" = ["docs/*.md"]
+"share/hermes-airin-qmeta/examples" = ["examples/*.py"]
+"share/hermes-airin-qmeta/skills" = ["skills/*.yaml"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
