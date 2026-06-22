@@ -19,9 +19,12 @@ QMeta подключается к Айрин как отключаемый ин�
 Пакет `hermes-airin-qmeta` добавляет optional MCP-сервер:
 
 ```bash
+cd packages/qmeta/rednet-airin-qmeta
 pip install -e ".[mcp]"
 hermes-airin-mcp
 ```
+
+Команды выше выполняются из корня репозитория Skillbook. Если ты уже находишься в папке `packages/qmeta/rednet-airin-qmeta`, команду `cd ...` выполнять не нужно.
 
 Инструменты:
 

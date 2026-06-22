@@ -62,9 +62,12 @@ hermes-airin "Собери проверяемую модель решения" -
 MCP:
 
 ```bash
+cd packages/qmeta/rednet-airin-qmeta
 pip install -e ".[mcp]"
 hermes-airin-mcp
 ```
+
+Команды выполняются из корня репозитория Skillbook. Если текущая папка уже `packages/qmeta/rednet-airin-qmeta`, начни сразу с `pip install -e ".[mcp]"`.
 
 ## Отключение
 

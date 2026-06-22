@@ -21,7 +21,7 @@ QMeta в этой редакции оформлен как классическ�
 ## Быстрый старт
 
 ```bash
-cd hermes_airin_qmeta
+cd packages/qmeta/rednet-airin-qmeta
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -e .
@@ -40,6 +40,7 @@ PYTHONPATH=src python examples/demo_hermes.py
 Опционально пакет может работать как MCP-сервер для Айрин, Codex-совместимых сред и других агентов:
 
 ```bash
+cd packages/qmeta/rednet-airin-qmeta
 pip install -e ".[mcp]"
 hermes-airin-mcp
 ```
