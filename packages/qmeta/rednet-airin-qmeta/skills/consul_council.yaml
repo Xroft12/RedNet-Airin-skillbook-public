@@ -1,0 +1,29 @@
+id: consul_council
+name: "Consul Council"
+description: "Совет экспертных контуров для проверки ветвей с разных позиций."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - consul
+  - council
+  - experts
+confidence: 0.75

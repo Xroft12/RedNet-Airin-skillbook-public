@@ -1,0 +1,29 @@
+id: uncertainty_register
+name: "Uncertainty Register"
+description: "Отделяет факт, гипотезу, метафору, риск и необходимость проверки."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - uncertainty
+  - science
+  - risk
+confidence: 0.75

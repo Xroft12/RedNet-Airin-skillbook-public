@@ -1,0 +1,28 @@
+id: dual_mode_qmeta
+name: "Dual Mode QMeta"
+description: "Разделяет режим ответа пользователю и режим кристаллизации навыка."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - mode
+  - context
+outputs:
+  - QMetaResult
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - qmeta
+  - answer
+  - skill
+  - core
+confidence: 0.75

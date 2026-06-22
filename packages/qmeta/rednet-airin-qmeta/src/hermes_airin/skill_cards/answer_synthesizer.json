@@ -1,0 +1,42 @@
+{
+  "id": "answer_synthesizer",
+  "name": "Answer Synthesizer",
+  "description": "Синтезирует итоговый ответ без раскрытия служебных skill-card.",
+  "mode": "skill",
+  "trigger": "manual",
+  "operator_trace": [
+    "branching",
+    "audit",
+    "score",
+    "consul",
+    "interference",
+    "measure"
+  ],
+  "selection_rule": "reuse when constraints and goals match",
+  "inputs": [
+    "task",
+    "context",
+    "memory"
+  ],
+  "outputs": [
+    "answer",
+    "diagnostics",
+    "process_trace"
+  ],
+  "safety": [
+    "deny-by-default",
+    "permission-check for side effects",
+    "simulation-only for unsafe external actions"
+  ],
+  "confidence": 0.75,
+  "version": "0.3.0",
+  "tags": [
+    "answer",
+    "synthesis",
+    "user"
+  ],
+  "metadata": {
+    "library": "hermes-airin-qmeta",
+    "author_frame": "RedNet / Xroft"
+  }
+}

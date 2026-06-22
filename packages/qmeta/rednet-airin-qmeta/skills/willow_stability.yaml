@@ -1,0 +1,29 @@
+id: willow_stability
+name: "Willow Stability"
+description: "Многопроходная коррекция ошибок по мотивам QEC: синдромы, repair, повторный аудит."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - willow
+  - stability
+  - error_correction
+confidence: 0.75

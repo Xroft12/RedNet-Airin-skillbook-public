@@ -1,0 +1,29 @@
+id: red_network_sim
+name: "Красная сеть / simulation"
+description: "Симуляционный слой аварийного допуска, журнала и выбора оператора без внешнего вмешательства."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - rednet
+  - policy
+  - simulation
+confidence: 0.75

@@ -1,0 +1,28 @@
+id: skill_crystallizer
+name: "Skill Crystallizer"
+description: "Преобразует удачную траекторию решения в reusable skill-card."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - skill-card
+  - diagnostics
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - skill
+  - crystallization
+  - reuse
+confidence: 0.75

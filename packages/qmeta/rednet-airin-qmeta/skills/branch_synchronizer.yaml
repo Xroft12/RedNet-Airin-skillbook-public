@@ -1,0 +1,29 @@
+id: branch_synchronizer
+name: "Branch Synchronizer"
+description: "Сравнивает ветки разговора и переносит устойчивые правила."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - sync
+  - branches
+  - memory
+confidence: 0.75

@@ -1,0 +1,29 @@
+id: sanctum_state
+name: "Святилище State Layer"
+description: "Изолированный state/memory слой: граф решений, критериев и выбранных ветвей."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - sanctum
+  - state
+  - memory
+confidence: 0.75

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-airin-qmeta"
+version = "0.4.0"
+description = "Classical branching meta-skill engine for Hermes/Airin agents: answer/skill modes, expert council, memory, safety, process simulation, and optional MCP tools."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "RedNet / Xroft"}]
+keywords = ["agent", "metaskills", "qmeta", "rednet", "hermes", "airin", "council"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+mcp = ["mcp>=1.0"]
+
+[project.scripts]
+hermes-airin = "hermes_airin.__main__:main"
+hermes-airin-mcp = "hermes_airin.mcp_server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+hermes_airin = ["skill_cards/*.json"]

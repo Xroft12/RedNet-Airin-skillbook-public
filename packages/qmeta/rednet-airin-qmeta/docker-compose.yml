@@ -1,0 +1,6 @@
+services:
+  hermes-airin:
+    build: .
+    volumes:
+      - ./runtime:/app/runtime
+    command: ["python", "-m", "hermes_airin", "Смоделируй работу агента Гермес", "--mode", "answer", "--diagnostics"]

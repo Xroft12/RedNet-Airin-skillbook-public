@@ -1,0 +1,29 @@
+id: criteria_layer
+name: "Criteria Layer"
+description: "Извлекает критерии качества и проверяет ответ по ним."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - criteria
+  - quality
+  - evaluation
+confidence: 0.75

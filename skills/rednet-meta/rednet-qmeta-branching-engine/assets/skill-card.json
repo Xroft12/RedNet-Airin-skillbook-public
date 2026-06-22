@@ -1,0 +1,20 @@
+{
+  "id": "rednet-qmeta-branching-engine",
+  "name": "REDNET QMeta Branching Engine",
+  "version": "0.4.0",
+  "status": "observe-ready",
+  "modes": ["off", "observe", "assist", "skill", "publish"],
+  "inputs": ["task", "goals", "constraints", "mode", "budget"],
+  "outputs": ["answer", "skill_card", "diagnostics", "trace"],
+  "safety": [
+    "no hidden side effects",
+    "no live network or Docker changes",
+    "no private memory publication",
+    "scientific-language boundary required"
+  ],
+  "package": "packages/qmeta/rednet-airin-qmeta",
+  "mcp": {
+    "command": "hermes-airin-mcp",
+    "tools": ["solve", "skill_catalog", "explain_model"]
+  }
+}

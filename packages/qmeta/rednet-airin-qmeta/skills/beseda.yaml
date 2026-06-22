@@ -1,0 +1,29 @@
+id: beseda
+name: "Беседа"
+description: "Режим живого совместного уточнения смысла: мнение, редкие сильные вопросы, скрытые критерии."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - dialogue
+  - beseda
+  - human_exchange
+confidence: 0.75

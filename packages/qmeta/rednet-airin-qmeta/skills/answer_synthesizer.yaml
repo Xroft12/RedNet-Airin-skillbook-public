@@ -1,0 +1,29 @@
+id: answer_synthesizer
+name: "Answer Synthesizer"
+description: "Синтезирует итоговый ответ без раскрытия служебных skill-card."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - answer
+  - synthesis
+  - user
+confidence: 0.75

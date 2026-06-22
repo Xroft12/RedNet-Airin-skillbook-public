@@ -1,0 +1,29 @@
+id: source_lock_card
+name: "Source Lock Card"
+description: "Фиксирует источники, границы факта/гипотезы/метафоры и критерии приемки."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - source
+  - provenance
+  - audit
+confidence: 0.75

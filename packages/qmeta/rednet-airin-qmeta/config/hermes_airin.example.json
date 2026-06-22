@@ -1,0 +1,8 @@
+{
+  "default_mode": "answer",
+  "enable_consul": true,
+  "enable_processes": true,
+  "show_diagnostics": false,
+  "permissions": [],
+  "memory_path": "runtime/hermes_airin_memory.jsonl"
+}

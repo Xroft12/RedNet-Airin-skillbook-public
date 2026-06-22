@@ -1,0 +1,41 @@
+{
+  "id": "dual_mode_qmeta",
+  "name": "Dual Mode QMeta",
+  "description": "Разделяет режим ответа пользователю и режим кристаллизации навыка.",
+  "mode": "skill",
+  "trigger": "manual",
+  "operator_trace": [
+    "branching",
+    "audit",
+    "score",
+    "consul",
+    "interference",
+    "measure"
+  ],
+  "selection_rule": "reuse when constraints and goals match",
+  "inputs": [
+    "task",
+    "mode",
+    "context"
+  ],
+  "outputs": [
+    "QMetaResult"
+  ],
+  "safety": [
+    "deny-by-default",
+    "permission-check for side effects",
+    "simulation-only for unsafe external actions"
+  ],
+  "confidence": 0.75,
+  "version": "0.3.0",
+  "tags": [
+    "qmeta",
+    "answer",
+    "skill",
+    "core"
+  ],
+  "metadata": {
+    "library": "hermes-airin-qmeta",
+    "author_frame": "RedNet / Xroft"
+  }
+}

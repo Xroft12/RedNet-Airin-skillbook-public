@@ -1,0 +1,29 @@
+id: meta_observer
+name: "Meta Observer"
+description: "Фиксирует состояние процесса, риски, дрейф цели и потерю критериев."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - observer
+  - process
+  - audit
+confidence: 0.75

@@ -1,0 +1,21 @@
+{
+  "name": "hermes-airin-qmeta",
+  "version": "0.4.0",
+  "created_for": "Hermes / Airin / RedNet",
+  "modes": [
+    "answer",
+    "skill"
+  ],
+  "core_components": [
+    "BranchingMetaEngine",
+    "MultiverseEngine",
+    "Consul",
+    "SafetyGuard",
+    "SkillRegistry",
+    "ProcessPipeline",
+    "JsonlMemory",
+    "GraphMemory"
+  ],
+  "safety_boundary": "classical simulation and agent orchestration; no external stealth, hacking, autonomous side effects, or physical quantum-computation claims",
+  "python": ">=3.10"
+}

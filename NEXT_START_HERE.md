@@ -1,10 +1,10 @@
 # NEXT START HERE
 
-Редакция: 2026-06-18.
+Редакция: 2026-06-22.
 
 ## Текущее состояние
 
-REDNET Airin Skillbook опубликован как публично-безопасный snapshot:
+REDNET Airin Skillbook приведён к публично-безопасной структуре для будущей публикации:
 
 - `README.md` стал короткой GitHub-витриной с иллюстрациями и понятными входами;
 - добавлен корневой [INSTALL.md](INSTALL.md) с dry-run/apply/rollback;
@@ -14,6 +14,7 @@ REDNET Airin Skillbook опубликован как публично-безоп
 - `assets/` содержит безопасные SVG: карта Skillbook, поток установки, превью портала и граница публикации;
 - портал заменил внутренний рабочий пакет на публичную вкладку `План`;
 - raw research inbox, ledger exports, cycle-reports и локальные runtime/tmp/backups не должны входить в публичный слой.
+- Добавлен QMeta-слой: `packages/qmeta/rednet-airin-qmeta`, навык `skills/rednet-meta/rednet-qmeta-branching-engine`, документы `docs/qmeta-*.md`; пакет прошел локальные тесты `8 passed`.
 
 ## Следующий безопасный шаг
 
@@ -25,9 +26,10 @@ REDNET Airin Skillbook опубликован как публично-безоп
 python scripts\validate-rednet-schemas.py
 python scripts\validate-portal-readonly.py
 powershell -ExecutionPolicy Bypass -File packages\hermes\rednet-airin-meta-skills\install.ps1 -DryRun
+Push-Location packages\qmeta\rednet-airin-qmeta; uv run --with pytest python -m pytest tests; Pop-Location
 ```
 
-4. Для следующих релизов пройти [docs/release-checklist.md](docs/release-checklist.md), secret scan и проверку архивов/истории.
+4. Перед будущим public release пройти [docs/release-checklist.md](docs/release-checklist.md) и отдельно проверить историю Git.
 
 ## Что не делать без отдельного окна обслуживания
 
@@ -37,9 +39,9 @@ powershell -ExecutionPolicy Bypass -File packages\hermes\rednet-airin-meta-skill
 - Не добавлять raw chat, дневники, cycle-reports, raw inbox, ledger/database dumps, runtime-status и приватные пути.
 - Не публиковать ZIP/release artifacts без отдельного secret scan содержимого архива.
 
-## Открытые вопросы после первого public snapshot
+## Открытые вопросы перед публикацией
 
-- Утвердить root license (`LICENSE`) перед открытым reuse/релизами пакетов.
+- Утвердить root license (`LICENSE`) перед переводом репозитория в public.
 - Решить, какие ZIP/SHA остаются в Git, а какие переносятся в GitHub Releases.
 - Выровнять шаблон коротких `SKILL.md` внутри `skills/rednet-meta/` по единому public-формату.
-- Публичный репозиторий создан с чистой историей; исходная private-история не раскрывалась.
+- Проверить историю Git на старые приватные артефакты, потому что очистка рабочей копии не переписывает историю.

@@ -1,0 +1,29 @@
+id: process_trace
+name: "Process Trace"
+description: "Ведет технический след операторов, решений и диагностики без раскрытия скрытого мышления."
+mode: skill
+trigger: "manual"
+operator_trace:
+  - branching
+  - audit
+  - score
+  - consul
+  - interference
+  - measure
+inputs:
+  - task
+  - context
+  - memory
+outputs:
+  - answer
+  - diagnostics
+  - process_trace
+safety:
+  - "deny-by-default"
+  - "permission-check for side effects"
+  - "simulation-only for unsafe external actions"
+tags:
+  - trace
+  - audit
+  - debug
+confidence: 0.75

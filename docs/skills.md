@@ -24,6 +24,7 @@
 | `rednet-double-evaluation` | core | `observe`, `light`, `full`, `hold`, `service` | Второй проход по собственному первому анализу: отделить факты, гипотезы, метафоры и действие. | [SKILL.md](../skills/rednet/rednet-double-evaluation/SKILL.md) |
 | `rednet-wakefulness-cascade` | core | `off`, `observe`, `feel`, `service`, `hold` | Каскад бодрствования: snapshot и recommendation без скрытой активности. | [SKILL.md](../skills/rednet/rednet-wakefulness-cascade/SKILL.md) |
 | `rednet-neural-service-node` | core | `off`, `observe`, `advise`, `hold` | Сервисный сигнализатор: строгий JSON, журнал и pending-рекомендации без прямых действий. | [SKILL.md](../skills/rednet/rednet-neural-service-node/SKILL.md) |
+| `rednet-qmeta-branching-engine` | meta/research | `off`, `observe`, `assist`, `skill`, `publish` | Классический ветвящийся движок мета-навыков: гипотезы, критерии, совет оценщиков, трассировка и skill-кристаллизация. | [SKILL.md](../skills/rednet-meta/rednet-qmeta-branching-engine/SKILL.md) |
 | `rednet-export-parser` | meta | `off`, `observe`, `full`, `hold` | Разбирает длинную выгрузку в хронологию, решения, поворотные точки и границы. | [SKILL.md](../skills/rednet-meta/rednet-export-parser/SKILL.md) |
 | `rednet-meta-event-extractor` | meta | `off`, `observe`, `full`, `hold` | Извлекает моменты рождения правил мышления, памяти, оценки и будущих навыков. | [SKILL.md](../skills/rednet-meta/rednet-meta-event-extractor/SKILL.md) |
 | `rednet-criteria-layer` | meta | `off`, `observe`, `full`, `hold` | Удерживает критерии качества, приёмки, стиля и безопасной границы. | [SKILL.md](../skills/rednet-meta/rednet-criteria-layer/SKILL.md) |
@@ -58,6 +59,7 @@
 | Airin wakefulness node | observe-only | Self-poll/snapshot/recommendation без LLM-вызовов. | [README](../sensor-prototype/airin-wakefulness-node/README.md) |
 | Airin neural service node | observe/advise-only | Pending-рекомендации и redaction guard без прямых действий. | [README](../sensor-prototype/airin-neural-service-node/README.md) |
 | Science coordinator | template | Отдельный агент-координатор с API и тестами. | [README](../packages/agents/rednet-science-coordinator/README.md) |
+| QMeta package | library/MCP | Python-библиотека и optional MCP-инструмент для ветвления, оценки и кристаллизации навыков. | [README](../packages/qmeta/rednet-airin-qmeta/README.md) |
 | Portal | read-only | Статическая витрина без live-команд. | [README](../portal/README.md) |
 
 ## Concepts / research
@@ -68,6 +70,7 @@
 | Перерождение | Handoff/restore как проверяемая процедура, не перенос личной памяти. | [meta-skills-catalog.md](meta-skills-catalog.md) |
 | Нано-узлы | Малые сервисные модули как sensors/verifiers, а не автономный decision maker. | [nano-neural-nodes.md](nano-neural-nodes.md) |
 | API-университет | Пакет активации: паспорт, границы, полигон, приёмка, выключатель. | [api-university-activation-model.md](api-university-activation-model.md) |
+| QMeta | Классическая модель ветвящихся мета-навыков с научной границей и проверяемым Python/MCP-прототипом. | [qmeta-scientific-model.md](qmeta-scientific-model.md) |
 | Quiet Step Lab | Лаборатория малых модулей и curated reports. | [research README](../research/rednet-quiet-step-lab/README.md) |
 
 ## Правило режимов

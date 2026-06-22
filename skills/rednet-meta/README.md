@@ -12,6 +12,7 @@
 
 | Линия | Навык | Назначение | Страница | Протокол / карточка |
 |---|---|---|---|---|
+| Research/MCP | `rednet-qmeta-branching-engine` | Классический ветвящийся движок мета-навыков: гипотезы, критерии, совет оценщиков, трассировка, skill-кристаллизация и optional MCP-инструмент. | [SKILL.md](rednet-qmeta-branching-engine/SKILL.md) | [protocol](rednet-qmeta-branching-engine/references/protocol.md), [card](rednet-qmeta-branching-engine/assets/skill-card.json) |
 | MVP | `rednet-export-parser` | Разбор длинной выгрузки в хронологию, решения, поворотные точки, хвосты и границы приватности. | [SKILL.md](rednet-export-parser/SKILL.md) | [protocol](rednet-export-parser/references/protocol.md), [card](rednet-export-parser/assets/skill-card.json) |
 | MVP | `rednet-meta-event-extractor` | Извлечение моментов рождения правил мышления, памяти, оценки, поведения и будущих навыков. | [SKILL.md](rednet-meta-event-extractor/SKILL.md) | [protocol](rednet-meta-event-extractor/references/protocol.md), [card](rednet-meta-event-extractor/assets/skill-card.json) |
 | MVP | `rednet-criteria-layer` | Удержание критериев качества: что считается хорошим ответом, завершенной задачей, допустимым стилем и безопасной границей. | [SKILL.md](rednet-criteria-layer/SKILL.md) | [protocol](rednet-criteria-layer/references/protocol.md), [card](rednet-criteria-layer/assets/skill-card.json) |

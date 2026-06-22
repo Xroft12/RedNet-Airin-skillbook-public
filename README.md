@@ -6,11 +6,11 @@
 
 # REDNET Airin Skillbook
 
-**Быстрые навыки. Тихие протоколы. Read-only портал. Публичная витрина без приватной истории.**
+**Быстрые навыки. Тихие протоколы. Read-only портал. Публичная витрина без секретов.**
 
 [Документация](docs/index.md) · [Установка](INSTALL.md) · [Навыки](docs/skills.md) · [Портал](portal/README.md) · [Граница приватности](docs/privacy-boundary.md)
 
-[![режим](https://img.shields.io/badge/mode-public--safe%20snapshot-7fd7ff)](#статус)
+[![режим](https://img.shields.io/badge/mode-private--first%20%2F%20public--later-7fd7ff)](#статус)
 [![установка](https://img.shields.io/badge/install-dry--run%20by%20default-99f6c8)](INSTALL.md)
 [![портал](https://img.shields.io/badge/portal-read--only-ffd166)](portal/README.md)
 [![секреты](https://img.shields.io/badge/secrets-not%20included-f87171)](docs/privacy-boundary.md)
@@ -100,6 +100,7 @@ python -m http.server 8795
 | **Протоколы** | Приёмка, отключение, сопровождение manifest, session-guided activation. | [protocols/](protocols/) |
 | **Портал** | Статическая локальная витрина без live-команд. | [portal/README.md](portal/README.md), [docs/rednet-portal.md](docs/rednet-portal.md) |
 | **Пакеты и прототипы** | Manifest, установщик, observe-only сенсоры, science coordinator template. | [packages/](packages/), [sensor-prototype/](sensor-prototype/) |
+| **QMeta** | Научная модель, Python-библиотека и optional MCP-инструмент для ветвящихся мета-навыков. | [docs/qmeta-scientific-model.md](docs/qmeta-scientific-model.md), [packages/qmeta/rednet-airin-qmeta/README.md](packages/qmeta/rednet-airin-qmeta/README.md) |
 | **Исследования** | Только curated summaries и module packs; raw inbox/ledger не публикуются. | [research/rednet-quiet-step-lab/README.md](research/rednet-quiet-step-lab/README.md) |
 | **Публикация** | Чеклист перед будущим GitHub public/release. | [docs/release-checklist.md](docs/release-checklist.md), [docs/privacy-boundary.md](docs/privacy-boundary.md) |
 
@@ -110,6 +111,7 @@ python -m http.server 8795
 | `rednet-double-evaluation` | installable skill | Двойная оценка: прямой анализ + анализ собственного первого следа, затем сверка фактов/гипотез/метафор. | [SKILL.md](skills/rednet/rednet-double-evaluation/SKILL.md) |
 | `rednet-wakefulness-cascade` | installable skill | Контур бодрствования: self-poll, safe snapshot, nano-evaluation, recommendation без скрытых действий. | [SKILL.md](skills/rednet/rednet-wakefulness-cascade/SKILL.md) |
 | `rednet-neural-service-node` | installable skill | Observe/advise-only сервисный сигнализатор с JSON, SQLite-журналом и pending-рекомендациями. | [SKILL.md](skills/rednet/rednet-neural-service-node/SKILL.md) |
+| `rednet-qmeta-branching-engine` | installable meta-skill + library | Ветвящийся движок мета-навыков: гипотезы, критерии, совет оценщиков, безопасная кристаллизация навыков и MCP-инструмент. | [SKILL.md](skills/rednet-meta/rednet-qmeta-branching-engine/SKILL.md) |
 | `rednet-meta/*` | skill family | 15 мета-навыков для качества процесса: критерии, неопределённость, public editor, research protocol и др. | [skills/rednet-meta/README.md](skills/rednet-meta/README.md) |
 
 Полная таблица: [docs/skills.md](docs/skills.md).
@@ -133,7 +135,7 @@ python -m http.server 8795
 
 Подробно: [docs/privacy-boundary.md](docs/privacy-boundary.md).
 
-## Проверка публичной версии
+## Проверка перед релизом
 
 Минимальный безопасный набор из корня репозитория:
 
@@ -143,8 +145,8 @@ python scripts\validate-portal-readonly.py
 powershell -ExecutionPolicy Bypass -File packages\hermes\rednet-airin-meta-skills\install.ps1 -DryRun
 ```
 
-Эта публичная версия создана как свежий Git-репозиторий без приватной истории исходного контура. Для следующих релизов повторяются secret scan, link check и review содержимого архивов.
+Перед переводом репозитория в public нужен отдельный review истории Git: даже если рабочая копия очищена, старые коммиты могут содержать неподходящие артефакты.
 
 ## Статус
 
-Репозиторий опубликован как **public-safe snapshot**: в нём нет приватной Git-истории, raw-памяти, токенов, runtime-выгрузок, архивов с непроверенным содержимым и live-команд. Более чувствительные пакеты памяти остаются в приватном контуре до отдельного релиза.
+Репозиторий находится в режиме **private-first / public-later**. Текущая задача — сделать его читаемым, красивым и безопасным для будущей публикации; фактический public release выполняется только после ручной проверки владельцем проекта.
