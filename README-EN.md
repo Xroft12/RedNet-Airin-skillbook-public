@@ -8,7 +8,7 @@
 
 **Public-safe skillbook for QMeta meta-skills, Airin/Hermes workflows, reproducible research, dry-run tooling and grant-ready open-source maintenance.**
 
-[Русская версия](README-RU.md) · [Documentation](docs/index.md) · [Install](INSTALL.md) · [Skills](docs/skills.md) · [QMeta](docs/qmeta-scientific-model.md) · [Grant Pack](grants/README.md) · [Privacy Boundary](docs/privacy-boundary.md)
+[Русская версия](README-RU.md) · [Reviewer path](docs/reviewer-path.en.md) · [Documentation](docs/index.md) · [Install](INSTALL.md) · [Skills](docs/skills.md) · [QMeta](docs/qmeta-scientific-model.md) · [Grant Pack](grants/README-EN.md) · [Privacy Boundary](docs/privacy-boundary.md)
 
 </div>
 
@@ -48,9 +48,9 @@ Modern long-running agent workflows often fail in predictable ways: they lose co
 For grant, model access or open-source review, read these pages in order:
 
 1. [QMeta / Airin grant positioning](docs/qmeta-grant-positioning.ru-en.md)
-2. [OpenAI application drafts](grants/openai-applications.ru-en.md)
+2. [OpenAI application drafts](grants/openai-applications.en.md)
 3. [Codex Open Source Fund note](grants/openai-codex-fund.md)
-4. [Scientific grant radar](grants/scientific-grant-radar.ru-en.md)
+4. [Scientific grant radar](grants/scientific-grant-radar.en.md)
 5. [Privacy boundary](docs/privacy-boundary.md)
 6. [QMeta scientific model](docs/qmeta-scientific-model.md)
 7. [Closed archive audit summary](docs/closed-archive-audit-2026-06-27.ru-en.md)
@@ -78,7 +78,7 @@ The repository is prepared for four primary application tracks:
 | OpenAI Trusted Access / defensive research support | Support for authorized code review, patch validation and maintainer checklists. |
 | OpenAI Researcher Access Program | API credits for evaluating QMeta on public-safe synthetic tasks. |
 
-Additional provider and grant options are tracked in [grants/provider-radar.md](grants/provider-radar.md) and [grants/scientific-grant-radar.ru-en.md](grants/scientific-grant-radar.ru-en.md).
+Additional provider and grant options are tracked in [grants/external-ai-access.en.md](grants/external-ai-access.en.md), [grants/provider-radar.md](grants/provider-radar.md) and [grants/scientific-grant-radar.en.md](grants/scientific-grant-radar.en.md).
 
 ## Visual materials
 
