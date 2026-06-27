@@ -6,15 +6,15 @@
 
 # REDNET Airin Skillbook
 
-**Public-safe skillbook for QMeta meta-skills, Airin/Hermes workflows, reproducible research, dry-run tooling and grant-ready open-source maintenance.**
+**Public-safe skillbook for QMeta meta-skills, Airin/Hermes workflows, reproducible research, dry-run tooling and read-only open-source documentation.**
 
-[Русская версия](README-RU.md) · [Reviewer path](docs/reviewer-path.en.md) · [Documentation](docs/index.md) · [Install](INSTALL.md) · [Skills](docs/skills.md) · [QMeta](docs/qmeta-scientific-model.md) · [Grant Pack](grants/README-EN.md) · [Privacy Boundary](docs/privacy-boundary.md)
+[Русская версия](README-RU.md) · [Reviewer path](docs/reviewer-path.en.md) · [Documentation](docs/index.md) · [Install](INSTALL.md) · [Skills](docs/skills.md) · [QMeta](docs/qmeta-scientific-model.md) · [Privacy Boundary](docs/privacy-boundary.md)
 
 </div>
 
 ## Overview
 
-REDNET Airin Skillbook is a public-safe open-source repository for agent workflow research and reusable meta-skills. It presents the Airin/Hermes skill system, QMeta branching model, read-only portal materials, dry-run installation logic, release discipline and grant application materials without exposing private runtime state.
+REDNET Airin Skillbook is a public-safe open-source repository for agent workflow research and reusable meta-skills. It presents the Airin/Hermes skill system, QMeta branching model, read-only portal materials, dry-run installation logic and release discipline without exposing private runtime state.
 
 The repository is intended for reviewers, maintainers, researchers and collaborators who need to understand the project without access to private infrastructure. It contains documentation, installable skill cards, synthetic examples, diagrams, public protocols and curated research summaries.
 
@@ -45,15 +45,13 @@ Modern long-running agent workflows often fail in predictable ways: they lose co
 
 ## Reviewer path
 
-For grant, model access or open-source review, read these pages in order:
+For open-source or research review, read these pages in order:
 
-1. [QMeta / Airin grant positioning](docs/qmeta-grant-positioning.ru-en.md)
-2. [OpenAI application drafts](grants/openai-applications.en.md)
-3. [Codex Open Source Fund note](grants/openai-codex-fund.md)
-4. [Scientific grant radar](grants/scientific-grant-radar.en.md)
-5. [Privacy boundary](docs/privacy-boundary.md)
-6. [QMeta scientific model](docs/qmeta-scientific-model.md)
-7. [Closed archive audit summary](docs/closed-archive-audit-2026-06-27.ru-en.md)
+1. [QMeta / Airin research positioning](docs/qmeta-grant-positioning.ru-en.md)
+2. [Privacy boundary](docs/privacy-boundary.md)
+3. [QMeta scientific model](docs/qmeta-scientific-model.md)
+4. [Closed archive audit summary](docs/closed-archive-audit-2026-06-27.ru-en.md)
+5. [Repository navigation](docs/navigation.md)
 
 ## Repository map
 
@@ -64,21 +62,7 @@ For grant, model access or open-source review, read these pages in order:
 | `research/rednet-quiet-step-lab/` | Public-safe research pipeline for discovery cards, module packs and experiments. |
 | `portal/` | Static read-only PWA showcase. |
 | `docs/` | Architecture, navigation, privacy boundary, release checks and QMeta documents. |
-| `grants/` | Grant and model-access application pack. |
 | `assets/` | Public diagrams, banners, icons and visual maps. |
-
-## Grant and access focus
-
-The repository is prepared for four primary application tracks:
-
-| Track | Request |
-|---|---|
-| OpenAI Codex for Open Source | ChatGPT Pro with Codex, API credits and maintainer workflow support. |
-| OpenAI Codex Open Source Fund | API credits for QMeta evaluations and open-source maintenance. |
-| OpenAI Trusted Access / defensive research support | Support for authorized code review, patch validation and maintainer checklists. |
-| OpenAI Researcher Access Program | API credits for evaluating QMeta on public-safe synthetic tasks. |
-
-Additional provider and grant options are tracked in [grants/external-ai-access.en.md](grants/external-ai-access.en.md), [grants/provider-radar.md](grants/provider-radar.md) and [grants/scientific-grant-radar.en.md](grants/scientific-grant-radar.en.md).
 
 ## Visual materials
 
@@ -114,7 +98,7 @@ http://127.0.0.1:8795/portal/
 
 ## Public boundary
 
-The public repository includes sanitized documentation, diagrams, synthetic examples, installable skill cards, read-only demos, review checklists and grant-facing summaries.
+The public repository includes sanitized documentation, diagrams, synthetic examples, installable skill cards, read-only demos, review checklists and research summaries.
 
 The public repository excludes raw private conversations, personal records, local runtime exports, private infrastructure values, production data, access material and closed archive contents as-is.
 
@@ -122,4 +106,4 @@ See [docs/privacy-boundary.md](docs/privacy-boundary.md) for the canonical bound
 
 ## Status
 
-This repository is being prepared as a funding-grade public open-source showcase. The goal is to make the project clear, bilingual, auditable and safe for reviewers while keeping private materials outside the public layer.
+This repository is being prepared as a public-safe open-source showcase. The goal is to make the project clear, bilingual, auditable and safe for reviewers while keeping private materials outside the public layer.
