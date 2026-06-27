@@ -15,8 +15,9 @@
 | Приоритет | Программа | Что просим | Файл |
 |---|---|---|---|
 | 1 | OpenAI Codex for Open Source | 6 months ChatGPT Pro with Codex, API credits, conditional Codex Security | [openai-applications.ru-en.md](openai-applications.ru-en.md) |
-| 2 | OpenAI Cybersecurity Grant Program / Trusted Access for Cyber | API credits and trusted defensive access | [openai-applications.ru-en.md](openai-applications.ru-en.md) |
-| 3 | OpenAI Researcher Access Program | Up to $1,000 API credits for research | [openai-applications.ru-en.md](openai-applications.ru-en.md) |
+| 2 | OpenAI Codex Open Source Fund | up to $25,000 API credits | [openai-codex-fund.md](openai-codex-fund.md) |
+| 3 | OpenAI Cybersecurity Grant Program / Trusted Access for Cyber | API credits and trusted defensive access | [openai-applications.ru-en.md](openai-applications.ru-en.md) |
+| 4 | OpenAI Researcher Access Program | up to $1,000 API credits for research | [openai-applications.ru-en.md](openai-applications.ru-en.md) |
 
 ### Дополнительные программы
 
@@ -38,8 +39,9 @@ Project positioning:
 | Priority | Program | Ask | File |
 |---|---|---|---|
 | 1 | OpenAI Codex for Open Source | 6 months ChatGPT Pro with Codex, API credits, conditional Codex Security | [openai-applications.ru-en.md](openai-applications.ru-en.md) |
-| 2 | OpenAI Cybersecurity Grant Program / Trusted Access for Cyber | API credits and trusted defensive access | [openai-applications.ru-en.md](openai-applications.ru-en.md) |
-| 3 | OpenAI Researcher Access Program | Up to $1,000 API credits for research | [openai-applications.ru-en.md](openai-applications.ru-en.md) |
+| 2 | OpenAI Codex Open Source Fund | up to $25,000 API credits | [openai-codex-fund.md](openai-codex-fund.md) |
+| 3 | OpenAI Cybersecurity Grant Program / Trusted Access for Cyber | API credits and trusted defensive access | [openai-applications.ru-en.md](openai-applications.ru-en.md) |
+| 4 | OpenAI Researcher Access Program | up to $1,000 API credits for research | [openai-applications.ru-en.md](openai-applications.ru-en.md) |
 
 ### Submission checklist
 
