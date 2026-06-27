@@ -1,143 +1,156 @@
 <div align="center">
 
 <a href="docs/index.md">
-  <img src="assets/airin-skillbook-hero.svg" alt="REDNET Airin Skillbook — публично-безопасная книга навыков" width="920">
+  <img src="assets/airin-skillbook-hero.svg" alt="REDNET Airin Skillbook — public-safe skillbook" width="920">
 </a>
 
 # REDNET Airin Skillbook
 
-**Быстрые навыки. Тихие протоколы. Read-only портал. Публичная витрина без секретов.**
+**QMeta · Airin/Hermes · Meta-skills · Read-only portal · Public-safe research layer**
 
-[Документация](docs/index.md) · [Установка](INSTALL.md) · [Навыки](docs/skills.md) · [Портал](portal/README.md) · [Граница приватности](docs/privacy-boundary.md)
+[Документация](docs/index.md) · [Installation](INSTALL.md) · [Skills](docs/skills.md) · [QMeta](docs/qmeta-scientific-model.md) · [Grants](grants/README.md) · [Privacy boundary](docs/privacy-boundary.md)
 
-[![режим](https://img.shields.io/badge/mode-private--first%20%2F%20public--later-7fd7ff)](#статус)
-[![установка](https://img.shields.io/badge/install-dry--run%20by%20default-99f6c8)](INSTALL.md)
-[![портал](https://img.shields.io/badge/portal-read--only-ffd166)](portal/README.md)
-[![секреты](https://img.shields.io/badge/secrets-not%20included-f87171)](docs/privacy-boundary.md)
-[![язык](https://img.shields.io/badge/docs-ru-8ee8ff)](docs/index.md)
+[![mode](https://img.shields.io/badge/mode-private--first%20%2F%20public--later-7fd7ff)](#status--статус)
+[![install](https://img.shields.io/badge/install-dry--run%20by%20default-99f6c8)](INSTALL.md)
+[![portal](https://img.shields.io/badge/portal-read--only-ffd166)](portal/README.md)
+[![secrets](https://img.shields.io/badge/secrets-not%20included-f87171)](docs/privacy-boundary.md)
+[![docs](https://img.shields.io/badge/docs-RU%20%2F%20EN-8ee8ff)](docs/qmeta-grant-positioning.ru-en.md)
 
 </div>
 
-> **Коротко:** это не дамп рабочей среды и не дневник разработки. Это аккуратная GitHub-витрина REDNET / Airin: установочные `SKILL.md`, протоколы, схемы, read-only портал и проверяемые прототипы, которые можно изучать без доступа к приватному контуру.
+> **RU:** это не дамп рабочей среды и не личный дневник разработки. Это публично-безопасная витрина REDNET / Airin: QMeta-модель, installable skills, протоколы, read-only portal, грантовые заявки и проверяемые прототипы без доступа к приватному контуру.
+>
+> **EN:** this is not a live environment dump or a private development diary. It is a public-safe REDNET / Airin showcase: QMeta model, installable skills, protocols, read-only portal, grant applications, and auditable prototypes without access to private runtime material.
 
-## Содержание
+## What this is / Что это
 
-- [Что это?](#что-это)
-- [Скриншоты и визуальная витрина](#скриншоты-и-визуальная-витрина)
-- [Возможности](#возможности)
-- [Быстрый старт](#быстрый-старт)
-- [Важные ссылки](#важные-ссылки)
-- [Что внутри](#что-внутри)
-- [Главные навыки](#главные-навыки)
-- [Граница публикации](#граница-публикации)
-- [Проверка перед релизом](#проверка-перед-релизом)
-- [Статус](#статус)
+**REDNET Airin Skillbook** is a bilingual public-safe skillbook and research scaffold for agent workflows built around **Airin/Hermes** and **QMeta**.
 
-## Что это?
+QMeta is a **classical engineering model for meta-skills**. It uses branching, audit, scoring, council review, convergence, measurement, and skill crystallization to make long-running AI work more traceable and safer.
 
-**REDNET Airin Skillbook** — публично-безопасная книга навыков для агентных контуров REDNET / Airin. Репозиторий показывает идею, модули, правила установки, безопасные stop-gates и визуальную карту проекта, но не раскрывает токены, raw-память, приватные сессии или live-инфраструктуру.
+```text
+branching -> audit -> score -> council -> interference -> measure -> answer | skill
+```
 
-Формат вдохновлён витринами dev-tool репозиториев: сверху — сильный hero, дальше — быстрые ссылки, честные бейджи, скриншоты, короткие benefits, затем установка и подробная карта.
+The project does **not** claim physical quantum computation, model consciousness as fact, magic, or non-local effects. Quantum-information language is used only as an engineering analogy for error correction, ensemble evaluation, threshold behavior, and traceable decision memory.
 
-## Скриншоты и визуальная витрина
+## Grant-ready focus / Грантовый фокус
 
-| Read-only портал | Безопасный dry-run | Карта Skillbook |
+This branch adds a dedicated public application pack for model access, API credits and research programs:
+
+| Area | Link |
+|---|---|
+| OpenAI and grant application drafts RU/EN | [grants/openai-applications.ru-en.md](grants/openai-applications.ru-en.md) |
+| External AI/API access radar | [grants/external-ai-access.ru-en.md](grants/external-ai-access.ru-en.md) |
+| Scientific and open-source grant radar | [grants/scientific-grant-radar.ru-en.md](grants/scientific-grant-radar.ru-en.md) |
+| Submission checklist | [grants/submission-checklist.ru-en.md](grants/submission-checklist.ru-en.md) |
+| QMeta reviewer positioning | [docs/qmeta-grant-positioning.ru-en.md](docs/qmeta-grant-positioning.ru-en.md) |
+| Grant architecture map | [docs/grant-architecture-map.ru-en.md](docs/grant-architecture-map.ru-en.md) |
+
+Primary target applications:
+
+1. **Codex for Open Source** — maintainer workflow, code review, docs, tests, release hardening.
+2. **Cybersecurity Grant / Trusted Access for Cyber** — defensive review and patch validation for owned/open-source WordPress/PWA/DevOps components.
+3. **Researcher Access Program** — QMeta evaluation for safer long-running agent workflows.
+
+## Archive review / Проверка закрытого архива
+
+The closed project archive was inspected and compared with the public archive. It was **not** copied directly into the repository.
+
+| Result | Link |
+|---|---|
+| Closed archive audit summary | [docs/closed-archive-audit-2026-06-27.ru-en.md](docs/closed-archive-audit-2026-06-27.ru-en.md) |
+| RedNET Fast Memory public outline | [docs/rednet-fast-memory-public-outline.ru-en.md](docs/rednet-fast-memory-public-outline.ru-en.md) |
+| Low-resource memory/routing module pack | [research/rednet-quiet-step-lab/modules/packs/low-resource-memory-and-routing.ru-en.md](research/rednet-quiet-step-lab/modules/packs/low-resource-memory-and-routing.ru-en.md) |
+
+Only sanitized architecture ideas were moved forward: local memory as a research model, read-only preview, dry-run install philosophy, deterministic analysis, digest, safety gates, and low-resource routing experiments.
+
+## Visual showcase / Визуальная витрина
+
+| Read-only portal | Safe dry-run | Skillbook map |
 |---|---|---|
-| <img src="assets/screenshots/portal-home.png" alt="Скриншот read-only портала REDNET Airin Skillbook" width="360"> | <img src="assets/screenshots/dry-run-terminal.png" alt="Санитизированный dry-run terminal preview" width="360"> | <img src="assets/skillbook-map.svg" alt="Карта REDNET Airin Skillbook" width="360"> |
-| [Открыть инструкцию портала](portal/README.md) | [Открыть установку](INSTALL.md) | [Открыть навигацию](docs/navigation.md) |
+| <img src="assets/screenshots/portal-home.png" alt="Read-only portal screenshot" width="360"> | <img src="assets/screenshots/dry-run-terminal.png" alt="Dry-run terminal preview" width="360"> | <img src="assets/skillbook-map.svg" alt="Skillbook map" width="360"> |
+| [Portal guide](portal/README.md) | [Install guide](INSTALL.md) | [Navigation](docs/navigation.md) |
 
-![Безопасный поток установки](assets/install-flow.svg)
+![Safe install flow](assets/install-flow.svg)
 
-## Возможности
+Additional public diagram: [Grant architecture map](docs/grant-architecture-map.ru-en.md).
 
-- **Dry-run first:** установщик сначала показывает, что будет скопировано, и ничего не меняет без явного `-Apply`.
-- **Read-only портал:** статическая PWA-витрина в `portal/` показывает структуру проекта, но не выполняет live-команды.
-- **Публичная граница:** документы фиксируют, что можно публиковать, а что остаётся только в приватном контуре.
-- **Модульные навыки:** skill-папки можно установить, отключить, перенести, проверить и удалить без структурного вреда.
-- **Протоколы приёмки:** есть чеклисты release/privacy/install, чтобы не превращать витрину в небезопасный дамп.
-- **Визуальная документация:** схемы и скриншоты лежат в `assets/` и проходят правило “без секретов и приватных путей”.
+## Features / Возможности
 
-## Быстрый старт
+- **Dry-run first:** installers preview actions before changing anything.
+- **Read-only portal:** static PWA showcase in `portal/` with no live commands.
+- **Public/private boundary:** clear rules for what can and cannot be published.
+- **Installable skills:** modular `SKILL.md` folders for REDNET and QMeta workflows.
+- **QMeta package:** Python/MCP-ready research package for `answer` and `skill` modes.
+- **Quiet Step Lab:** curated research module packs instead of raw private ledgers.
+- **Grant pack:** ready RU/EN application drafts for model access and API credits.
 
-### 1. Прочитать маршрут
+## Quick start / Быстрый старт
 
-Начни с [docs/index.md](docs/index.md): там есть роли читателя, установщика, ревьюера безопасности и контрибьютора.
+### 1. Read the route
 
-### 2. Проверить установку без изменений
+Start from [docs/index.md](docs/index.md). It describes reader roles: new reader, installer, security reviewer, contributor, researcher and portal user.
+
+### 2. Dry-run install
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File packages\hermes\rednet-airin-meta-skills\install.ps1 -DryRun
 ```
 
-`-DryRun` — безопасный режим: он показывает будущие операции и не копирует файлы. Реальная установка описана отдельно в [INSTALL.md](INSTALL.md) и должна выполняться только после review.
+`-DryRun` is the safe mode: it shows planned operations and does not copy files.
 
-### 3. Посмотреть портал локально
+### 3. View portal locally
 
 ```powershell
 python -m http.server 8795
 ```
 
-Открыть: `http://127.0.0.1:8795/portal/`.
+Open: `http://127.0.0.1:8795/portal/`.
 
-## Важные ссылки
+## Main sections / Основные разделы
 
-| Раздел | Зачем открыть | Ссылка |
+| Section | Purpose | Link |
 |---|---|---|
-| 🚀 Старт | Главный маршрут по репозиторию и ролям. | [docs/index.md](docs/index.md) |
-| 🛠️ Установка | Dry-run, ручная установка, rollback, проверка после установки. | [INSTALL.md](INSTALL.md) |
-| 🧠 Навыки | Каталог installable skills и meta-skills. | [docs/skills.md](docs/skills.md) |
-| 🧭 Навигация | Карта папок, документов и визуальных материалов. | [docs/navigation.md](docs/navigation.md) |
-| 🛡️ Приватность | Что разрешено публиковать, а что нельзя. | [docs/privacy-boundary.md](docs/privacy-boundary.md) |
-| 🖥️ Портал | Локальная read-only PWA-витрина. | [portal/README.md](portal/README.md) |
+| Documentation | Core navigation and public boundary | [docs/index.md](docs/index.md) |
+| Skills | Installable REDNET and QMeta skills | [skills/README.md](skills/README.md), [docs/skills.md](docs/skills.md) |
+| QMeta | Scientific model and Python/MCP package | [docs/qmeta-scientific-model.md](docs/qmeta-scientific-model.md), [packages/qmeta/rednet-airin-qmeta/README.md](packages/qmeta/rednet-airin-qmeta/README.md) |
+| Research | Quiet Step Lab and module packs | [research/rednet-quiet-step-lab/README.md](research/rednet-quiet-step-lab/README.md) |
+| Grants | Applications, access radar and submission checklist | [grants/README.md](grants/README.md) |
+| Portal | Read-only local PWA showcase | [portal/README.md](portal/README.md) |
+| Privacy | What is public and what stays closed | [docs/privacy-boundary.md](docs/privacy-boundary.md) |
 
-## Что внутри
+## Core skills / Главные навыки
 
-| Раздел | Для чего | Ссылка |
-|---|---|---|
-| **Стартовая документация** | Что это за проект, как читать, где граница публикации. | [docs/index.md](docs/index.md), [docs/navigation.md](docs/navigation.md) |
-| **Установка** | Dry-run, ручная установка, rollback, проверка после установки. | [INSTALL.md](INSTALL.md), [пакет Hermes](packages/hermes/rednet-airin-meta-skills/README.md) |
-| **Навыки** | Установочные `SKILL.md`: базовые REDNET-навыки и `rednet-meta`. | [skills/README.md](skills/README.md), [docs/skills.md](docs/skills.md) |
-| **Протоколы** | Приёмка, отключение, сопровождение manifest, session-guided activation. | [protocols/](protocols/) |
-| **Портал** | Статическая локальная витрина без live-команд. | [portal/README.md](portal/README.md), [docs/rednet-portal.md](docs/rednet-portal.md) |
-| **Пакеты и прототипы** | Manifest, установщик, observe-only сенсоры, science coordinator template. | [packages/](packages/), [sensor-prototype/](sensor-prototype/) |
-| **QMeta** | Научная модель, Python-библиотека и optional MCP-инструмент для ветвящихся мета-навыков. | [docs/qmeta-scientific-model.md](docs/qmeta-scientific-model.md), [packages/qmeta/rednet-airin-qmeta/README.md](packages/qmeta/rednet-airin-qmeta/README.md) |
-| **Исследования** | Только curated summaries и module packs; raw inbox/ledger не публикуются. | [research/rednet-quiet-step-lab/README.md](research/rednet-quiet-step-lab/README.md) |
-| **Публикация** | Чеклист перед будущим GitHub public/release. | [docs/release-checklist.md](docs/release-checklist.md), [docs/privacy-boundary.md](docs/privacy-boundary.md) |
-
-## Главные навыки
-
-| Навык | Тип | Для чего | Страница |
+| Skill | Type | Purpose | Page |
 |---|---|---|---|
-| `rednet-double-evaluation` | installable skill | Двойная оценка: прямой анализ + анализ собственного первого следа, затем сверка фактов/гипотез/метафор. | [SKILL.md](skills/rednet/rednet-double-evaluation/SKILL.md) |
-| `rednet-wakefulness-cascade` | installable skill | Контур бодрствования: self-poll, safe snapshot, nano-evaluation, recommendation без скрытых действий. | [SKILL.md](skills/rednet/rednet-wakefulness-cascade/SKILL.md) |
-| `rednet-neural-service-node` | installable skill | Observe/advise-only сервисный сигнализатор с JSON, SQLite-журналом и pending-рекомендациями. | [SKILL.md](skills/rednet/rednet-neural-service-node/SKILL.md) |
-| `rednet-qmeta-branching-engine` | installable meta-skill + library | Ветвящийся движок мета-навыков: гипотезы, критерии, совет оценщиков, безопасная кристаллизация навыков и MCP-инструмент. | [SKILL.md](skills/rednet-meta/rednet-qmeta-branching-engine/SKILL.md) |
-| `rednet-meta/*` | skill family | 15 мета-навыков для качества процесса: критерии, неопределённость, public editor, research protocol и др. | [skills/rednet-meta/README.md](skills/rednet-meta/README.md) |
+| `rednet-double-evaluation` | installable skill | Direct analysis plus self-check trace. | [SKILL.md](skills/rednet/rednet-double-evaluation/SKILL.md) |
+| `rednet-wakefulness-cascade` | installable skill | Observe-first wakefulness cascade. | [SKILL.md](skills/rednet/rednet-wakefulness-cascade/SKILL.md) |
+| `rednet-neural-service-node` | installable skill | Observe/advise-only service signal node. | [SKILL.md](skills/rednet/rednet-neural-service-node/SKILL.md) |
+| `rednet-qmeta-branching-engine` | meta-skill + library | Branching engine for hypotheses, criteria, council review and skill crystallization. | [SKILL.md](skills/rednet-meta/rednet-qmeta-branching-engine/SKILL.md) |
+| `rednet-meta/*` | skill family | Meta-skills for criteria, uncertainty, public editing, research protocol and process quality. | [skills/rednet-meta/README.md](skills/rednet-meta/README.md) |
 
-Полная таблица: [docs/skills.md](docs/skills.md).
+## Publication boundary / Граница публикации
 
-## Граница публикации
+Public layer includes:
 
-В публичный слой входят только:
+- sanitized descriptions, diagrams and synthetic examples;
+- installable skills without runtime state;
+- acceptance, rollback and review protocols;
+- read-only portal and educational prototypes;
+- grant-facing summaries and applications.
 
-- обезличенные описания, схемы и синтетические примеры;
-- установочные навыки без секретов и без runtime-состояния;
-- протоколы приёмки, отключения и проверки;
-- read-only портал и проверяемые учебные прототипы.
+Public layer excludes:
 
-В публичный слой **не входят**:
+- raw chats, diaries, private capsules or closed archives as-is;
+- `.env`, keys, sessions, cookies or access material;
+- runtime dumps, raw ledgers, databases or operational logs;
+- exact private paths, internal infrastructure, production data or reconstructable personal data;
+- hidden actions outside explicit permission gates.
 
-- сырой чат, дневники, приватные PDF/капсулы;
-- `.env`, токены, ключи, OAuth/Telegram-сессии, cookies;
-- локальные runtime-выгрузки, cycle-reports, raw inbox, ledger/database dumps;
-- точные приватные пути, NAS/UNC-адреса, рабочие базы и восстановимые настройки;
-- live Hermes, VPN/Tailscale/SSH/router actions и любые скрытые публикации.
+Details: [docs/privacy-boundary.md](docs/privacy-boundary.md).
 
-Подробно: [docs/privacy-boundary.md](docs/privacy-boundary.md).
-
-## Проверка перед релизом
-
-Минимальный безопасный набор из корня репозитория:
+## Release checks / Проверка перед релизом
 
 ```powershell
 python scripts\validate-rednet-schemas.py
@@ -145,8 +158,8 @@ python scripts\validate-portal-readonly.py
 powershell -ExecutionPolicy Bypass -File packages\hermes\rednet-airin-meta-skills\install.ps1 -DryRun
 ```
 
-Перед переводом репозитория в public нужен отдельный review истории Git: даже если рабочая копия очищена, старые коммиты могут содержать неподходящие артефакты.
+Before public release or grant submission, review Git history manually: even a clean working tree may have unsuitable artifacts in old commits.
 
-## Статус
+## Status / Статус
 
-Репозиторий находится в режиме **private-first / public-later**. Текущая задача — сделать его читаемым, красивым и безопасным для будущей публикации; фактический public release выполняется только после ручной проверки владельцем проекта.
+The repository is in **private-first / public-later** mode. The goal is to make it readable, beautiful, bilingual and safe for public review, model-access applications, and research grant submissions.
