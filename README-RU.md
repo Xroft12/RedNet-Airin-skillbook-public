@@ -6,15 +6,15 @@
 
 # REDNET Airin Skillbook
 
-**Публично-безопасная книга навыков для QMeta, Airin/Hermes, воспроизводимых исследований, dry-run-инструментов и open-source сопровождения под заявки.**
+**Публичная open-source книга навыков для QMeta, Airin/Hermes, воспроизводимых исследований, dry-run-инструментов и read-only документации.**
 
-[English version](README-EN.md) · [Маршрут ревьюера](docs/reviewer-path.ru.md) · [Документация](docs/index.md) · [Установка](INSTALL.md) · [Навыки](docs/skills.md) · [QMeta](docs/qmeta-scientific-model.md) · [Пакет заявок](grants/README-RU.md)
+[English version](README-EN.md) · [Маршрут ревьюера](docs/reviewer-path.ru.md) · [Документация](docs/index.md) · [Установка](INSTALL.md) · [Навыки](docs/skills.md) · [QMeta](docs/qmeta-scientific-model.md) · [Граница публикации](docs/privacy-boundary.md)
 
 </div>
 
 ## Обзор
 
-REDNET Airin Skillbook — публичный open-source репозиторий для исследований агентных процессов и повторно используемых мета-навыков. Он показывает систему навыков Airin/Hermes, модель QMeta, read-only портал, dry-run установку, релизную дисциплину и пакет заявок на доступы и гранты.
+REDNET Airin Skillbook — публичный open-source репозиторий для исследований агентных процессов и повторно используемых мета-навыков. Он показывает систему навыков Airin/Hermes, модель QMeta, read-only портал, dry-run установку и релизную дисциплину без раскрытия закрытого рабочего контура.
 
 Репозиторий рассчитан на ревьюеров, сопровождающих open-source проекты, исследователей и потенциальных партнёров. В публичный слой входят документация, installable skill cards, синтетические примеры, схемы, протоколы и очищенные исследовательские сводки.
 
@@ -34,13 +34,11 @@ branching -> audit -> score -> council -> interference -> measure -> answer | sk
 
 ## Маршрут ревьюера
 
-1. [QMeta / Airin grant positioning](docs/qmeta-grant-positioning.ru-en.md)
-2. [Черновики заявок OpenAI](grants/openai-applications.ru.md)
-3. [Codex Open Source Fund note](grants/openai-codex-fund.md)
-4. [Радар научных грантов](grants/scientific-grant-radar.ru.md)
-5. [Граница публикации](docs/privacy-boundary.md)
-6. [Научная модель QMeta](docs/qmeta-scientific-model.md)
-7. [Сводка проверки закрытого архива](docs/closed-archive-audit-2026-06-27.ru-en.md)
+1. [QMeta / Airin research positioning](docs/qmeta-grant-positioning.ru-en.md)
+2. [Граница публикации](docs/privacy-boundary.md)
+3. [Научная модель QMeta](docs/qmeta-scientific-model.md)
+4. [Сводка проверки закрытого архива](docs/closed-archive-audit-2026-06-27.ru-en.md)
+5. [Навигация по репозиторию](docs/navigation.md)
 
 ## Карта репозитория
 
@@ -51,17 +49,7 @@ branching -> audit -> score -> council -> interference -> measure -> answer | sk
 | `research/rednet-quiet-step-lab/` | Исследовательский конвейер и module packs. |
 | `portal/` | Статическая read-only PWA-витрина. |
 | `docs/` | Архитектура, навигация, release checks и документы QMeta. |
-| `grants/` | Пакет заявок на гранты и доступ к моделям. |
 | `assets/` | Схемы, баннеры, иконки и визуальные карты. |
-
-## Основные направления подачи
-
-| Направление | Что запрашивается |
-|---|---|
-| OpenAI Codex for Open Source | ChatGPT Pro with Codex, API credits и поддержка maintainer workflow. |
-| OpenAI Codex Open Source Fund | API credits для QMeta evaluations и open-source сопровождения. |
-| OpenAI Trusted Access / defensive research support | Поддержка авторизованного code review, patch validation и maintainer checklists. |
-| OpenAI Researcher Access Program | API credits для оценки QMeta на синтетических задачах. |
 
 ## Визуальные материалы
 
@@ -87,4 +75,4 @@ python -m http.server 8795
 
 ## Статус
 
-Репозиторий готовится как funding-grade public open-source showcase: понятный, двуязычный, проверяемый и безопасный для внешних ревьюеров.
+Репозиторий готовится как public-safe open-source showcase: понятный, двуязычный, проверяемый и безопасный для внешних ревьюеров.
