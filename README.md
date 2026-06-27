@@ -14,7 +14,7 @@
 
 ## English
 
-REDNET Airin Skillbook is a public-safe open-source repository for QMeta meta-skills, Airin/Hermes workflows, reproducible agent research, dry-run tooling, read-only portal materials and grant-ready maintenance documentation.
+REDNET Airin Skillbook is a public-safe open-source repository for QMeta meta-skills, Airin/Hermes workflows, reproducible agent research, dry-run tooling and read-only portal materials.
 
 Read the complete English version here: [README-EN.md](README-EN.md).
 
@@ -30,7 +30,7 @@ Reviewer path: [docs/reviewer-path.en.md](docs/reviewer-path.en.md)
 
 ## Русский
 
-REDNET Airin Skillbook — публично-безопасный open-source репозиторий для мета-навыков QMeta, workflow Airin/Hermes, воспроизводимых агентных исследований, dry-run-инструментов, read-only портала и документации под грантовые заявки.
+REDNET Airin Skillbook — публично-безопасный open-source репозиторий для мета-навыков QMeta, workflow Airin/Hermes, воспроизводимых агентных исследований, dry-run-инструментов и read-only портала.
 
 Полная русская версия: [README-RU.md](README-RU.md).
 
@@ -46,4 +46,4 @@ REDNET Airin Skillbook — публично-безопасный open-source р�
 
 ## Quick links
 
-[Documentation](docs/index.md) · [Install](INSTALL.md) · [Skills](docs/skills.md) · [Grants](grants/README.md) · [Portal](portal/README.md)
+[Documentation](docs/index.md) · [Install](INSTALL.md) · [Skills](docs/skills.md) · [Portal](portal/README.md) · [Privacy boundary](docs/privacy-boundary.md)
