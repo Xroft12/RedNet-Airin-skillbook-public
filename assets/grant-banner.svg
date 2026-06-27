@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-label="REDNET Airin Skillbook grant banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12091f"/>
+      <stop offset="0.45" stop-color="#25104a"/>
+      <stop offset="1" stop-color="#073642"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4d6d"/>
+      <stop offset="0.55" stop-color="#9d4edd"/>
+      <stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="420" rx="34" fill="url(#bg)"/>
+  <circle cx="1180" cy="90" r="170" fill="#00d4ff" opacity="0.10"/>
+  <circle cx="220" cy="340" r="190" fill="#ff4d6d" opacity="0.10"/>
+  <path d="M150 235 C310 95, 470 335, 650 205 S1010 145, 1235 255" fill="none" stroke="url(#line)" stroke-width="7" opacity="0.75"/>
+  <text x="84" y="122" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="800">REDNET Airin Skillbook</text>
+  <text x="84" y="184" fill="#d7e5ff" font-family="Arial, sans-serif" font-size="30">QMeta · Meta-skills · Airin/Hermes · Public-safe research</text>
+  <text x="84" y="260" fill="#ffffff" font-family="Arial, sans-serif" font-size="26" font-weight="700">Grant-ready open-source layer</text>
+  <text x="84" y="305" fill="#c9d6ff" font-family="Arial, sans-serif" font-size="22">Bilingual applications · model access · API credits · responsible AI workflows</text>
+  <g transform="translate(950 105)" fill="none" stroke="#ffffff" stroke-opacity="0.50" stroke-width="3">
+    <circle cx="0" cy="0" r="46"/>
+    <circle cx="132" cy="54" r="38"/>
+    <circle cx="62" cy="142" r="50"/>
+    <line x1="36" y1="26" x2="100" y2="43"/>
+    <line x1="110" y1="84" x2="86" y2="105"/>
+    <line x1="40" y1="106" x2="18" y2="42"/>
+  </g>
+</svg>
