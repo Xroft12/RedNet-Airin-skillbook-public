@@ -18,14 +18,7 @@ REDNET Airin Skillbook is a public-safe open-source repository for QMeta meta-sk
 
 Read the complete English version here: [README-EN.md](README-EN.md).
 
-### Reviewer path
-
-1. [QMeta / Airin grant positioning](docs/qmeta-grant-positioning.ru-en.md)
-2. [OpenAI application drafts](grants/openai-applications.ru-en.md)
-3. [Codex Open Source Fund note](grants/openai-codex-fund.md)
-4. [Scientific grant radar](grants/scientific-grant-radar.ru-en.md)
-5. [Privacy boundary](docs/privacy-boundary.md)
-6. [QMeta scientific model](docs/qmeta-scientific-model.md)
+Reviewer path: [docs/reviewer-path.en.md](docs/reviewer-path.en.md)
 
 ### Visual materials
 
@@ -41,14 +34,7 @@ REDNET Airin Skillbook — публично-безопасный open-source р�
 
 Полная русская версия: [README-RU.md](README-RU.md).
 
-### Маршрут ревьюера
-
-1. [QMeta / Airin grant positioning](docs/qmeta-grant-positioning.ru-en.md)
-2. [Черновики заявок OpenAI](grants/openai-applications.ru-en.md)
-3. [Codex Open Source Fund note](grants/openai-codex-fund.md)
-4. [Scientific grant radar](grants/scientific-grant-radar.ru-en.md)
-5. [Граница приватности](docs/privacy-boundary.md)
-6. [Научная модель QMeta](docs/qmeta-scientific-model.md)
+Маршрут ревьюера: [docs/reviewer-path.ru.md](docs/reviewer-path.ru.md)
 
 ### Визуальные материалы
 
